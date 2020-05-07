@@ -36,19 +36,6 @@ p,span,a{
   width: 100%;
   z-index: 99;
 }
-.navbar-light .navbar-brand {
-  color: #ff9a1f;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-.navbar-light .navbar-brand span{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  color: #ff9a1f;
-  font-size: 35px;
-}
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -82,9 +69,6 @@ p,span,a{
 .navbar-light .navbar-nav .nav-link:hover .help{
   border: 1px solid #ff9a1f;
 }
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-  color: #ff9a1f;
-}
 .login-modal .modal .modal-content{
   padding: 30px 50px;
 }
@@ -104,11 +88,6 @@ p,span,a{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  font-weight: 800;
-  color: #ff9a1f;
-  text-transform: uppercase;
 }
 .modal-title span{
   font-size: 35px;
@@ -137,7 +116,7 @@ p,span,a{
 .login-modal .modal .modal-content .modal-body .form .form-group .form-control:focus {
   color: #444444;
   background-color: #fff;
-  border-bottom: 1px solid #ff9a1f!important;
+  border-bottom: 1px solid #ac7d6d!important;
   box-shadow: none;
 }
 .forget{
@@ -157,13 +136,13 @@ p,span,a{
   padding: 10px 0;
   font-size: 18px;
   font-weight: 500;
-  background: rgb(255,164,34);
-  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
-  border: 1px solid #ffa422;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
 }
 .form .log:hover{
-  background: rgb(233,147,25);
-  background: linear-gradient(90deg, rgba(233,147,25,1) 0%, rgba(255,164,34,1) 35%, rgba(233,147,25,1) 100%);
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }
 .form p{
   text-align: center;
@@ -177,16 +156,16 @@ p,span,a{
   text-align: center;
 }
 .form .reg .btn{
-  background: rgb(5,200,201);
-  background: linear-gradient(90deg, rgba(5,200,201,1) 0%, rgba(0,174,175,1) 35%, rgba(2,169,170,1) 100%);
-  border: 1px solid #00aeaf;
+  background: rgb(255,164,34);
+  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
+  border: 1px solid #ffa422;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   font-weight: 500;
 }
 .form .reg .btn:hover{
-  background: rgb(0,174,175);
-  background: linear-gradient(90deg, rgba(0,174,175,1) 0%, rgba(2,169,170,1) 35%, rgba(0,174,175,1) 100%);
+  background: rgb(233,147,25);
+  background: linear-gradient(90deg, rgba(233,147,25,1) 0%, rgba(255,164,34,1) 35%, rgba(233,147,25,1) 100%);
 }
 
 
@@ -288,7 +267,7 @@ p,span,a{
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #ff9a1f;
+  background: #ac7d6d;
 }
 .title p{
   color: #666666;
@@ -308,7 +287,7 @@ p,span,a{
   line-height: 60px;
   font-size: 24px;
   color: #fff;
-  background: #ff9a1f;
+  background: #ac7d6d;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -377,7 +356,7 @@ p,span,a{
   line-height: 60px;
   font-size: 24px;
   color: #fff;
-  background: #ff9a1f;
+  background: #ac7d6d;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -401,8 +380,8 @@ p,span,a{
 #common{
   padding-top: 28px;
   padding-bottom: 25px;
-  background: rgb(255,164,34);
-  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
 }
 #common h3{
   color: #fff;
@@ -412,9 +391,9 @@ p,span,a{
   text-transform: capitalize;
 }
 .cmn-btn .btn{
-  background: rgb(5,200,201);
-  background: linear-gradient(90deg, rgba(5,200,201,1) 0%, rgba(0,174,175,1) 35%, rgba(2,169,170,1) 100%);
-  border: 1px solid #00aeaf;
+  background: rgb(255,164,34);
+  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
+  border: 1px solid #ffa422;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -422,8 +401,8 @@ p,span,a{
   text-transform: capitalize;
 }
 .cmn-btn .btn:hover{
-  background: rgb(0,174,175);
-  background: linear-gradient(90deg, rgba(0,174,175,1) 0%, rgba(2,169,170,1) 35%, rgba(0,174,175,1) 100%);
+  background: rgb(233,147,25);
+  background: linear-gradient(90deg, rgba(233,147,25,1) 0%, rgba(255,164,34,1) 35%, rgba(233,147,25,1) 100%);
 }
 
 /* ===================================================================================================
@@ -453,9 +432,9 @@ p,span,a{
 }
 #featured .card-body .btn{
   margin-top: 20px;
-  background: rgb(255,164,34);
-  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
-  border: 1px solid #ffa422;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -463,17 +442,17 @@ p,span,a{
   text-transform: capitalize;
 }
 #featured .card-body .btn:hover{
-  background: rgb(233,147,25);
-  background: linear-gradient(90deg, rgba(233,147,25,1) 0%, rgba(255,164,34,1) 35%, rgba(233,147,25,1) 100%);
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }
 .view-all{
   margin-top: 40px;
 }
 .view-all .btn{
   margin-top: 20px;
-  background: rgb(255,164,34);
-  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
-  border: 1px solid #ffa422;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -482,8 +461,8 @@ p,span,a{
   text-transform: capitalize;
 }
 .view-all .btn:hover{
-  background: rgb(233,147,25);
-  background: linear-gradient(90deg, rgba(233,147,25,1) 0%, rgba(255,164,34,1) 35%, rgba(233,147,25,1) 100%);
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }
 
 
@@ -530,7 +509,7 @@ p,span,a{
   transform: translateX(-50%);
 }
 .str-contents .img-border{
-  border: 5px solid #ff9a1f;
+  border: 5px solid #c58070;
 }
 .str-contents p{
   color: #666666;
@@ -543,7 +522,7 @@ p,span,a{
   font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #ff9a1f;
+  color: #ac7d6d;
 }
 .str-contents:hover{
   -webkit-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.4);
@@ -577,7 +556,7 @@ p,span,a{
   border-bottom: 1px solid rgba(68,68,68,.2);
   padding-bottom: 18px;
   font-size: 20px;
-  color: #ff9a1f;
+  color: #c58070;
   font-weight: 500;
 }
 .cont-span{
@@ -594,7 +573,7 @@ p,span,a{
   font-weight: 400;
 }
 .cont-span span a:hover{
-  color: #ff9a1f;
+  color: #ac7d6d;
 }
 .cont-spans a i{
   color: #666666;
@@ -605,12 +584,12 @@ p,span,a{
   line-height: 40px;
   text-align: center;
   font-size: 16px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
   transition: all linear .3s;
 }
 .cont-spans a i:hover{
-  background: #ff9a1f;
+  background: #c58070;
   color: #fff;
 }
 .mr-1{
@@ -621,8 +600,8 @@ p,span,a{
                                             Footer Part Css
 ==================================================================================================== */
 #footer{
-  background: rgb(255,164,34);
-  background: linear-gradient(90deg, rgba(255,164,34,1) 0%, rgba(233,147,25,1) 35%, rgba(255,164,34,1) 100%);
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
   padding-top: 23px;
   padding-bottom: 16px;
   text-align: center;
@@ -634,7 +613,7 @@ p,span,a{
   font-size: 14px;
 }
 #footer h4{
-  color: #f5f5f5;
+  color: #dddddd;
   font-size: 14px;
 }
 #footer h4 a{

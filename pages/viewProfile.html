@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile view</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="viewProfile">
+  <!-- Navbar Part Star -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img src="../images/zibonshathi.png" alt="logo" style="width: 130px; height: 65px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login <i class="fas fa-chevron-down"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-headset help"></i> Help <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Help Desk</a>
+            <a class="dropdown-item" href="#">Be Safe Online</a>
+          </div>
+        </li>   
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <!--Login Modal -->
+  <div class="login-modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><img src="../images/zibonshathi.png" alt="logo" style="width: 130px; height: 65px;"></h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="welcome">
+              <h2>Welcome back! Please Login</h2>
+            </div>
+            <div class="form">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="Password">
+                </div>
+                <div class="forget">
+                  <p><a href="#">Forget Password?</a></p>
+                </div>
+                <button type="submit" class="log btn btn-primary">Login</button>
+              </form>
+              <p>New to Zibonshathi?</p>
+              <div class="reg">
+                <a class="btn btn-primary" href="#" role="button">Register Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar Part End -->
+
+  <!-- View Profile Part Start -->
+  <section id="v-profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="v-pro-body">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="pro-img">
+                  <img src="../images/featured-01.jpg" alt="img" style="height: 120px;" class="w-100">
+                  <div class="overlay">
+                    <h5><a href="#">Edit</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="pro-content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h6><strong>Name : </strong>Mark Gamberther</h6>
+                      <h6><strong>Email : </strong>utshaw1995@gmail.com</h6>
+                      <h6>
+                        <span><strong>Gender : </strong>Male</span>
+                        <span><strong>Age : </strong>28</span>
+                        <span><strong>Height : </strong>5'6</span>
+                      </h6>
+                      <h6><strong>Location: </strong>Dhaka</h6>
+                    </div>
+                    <div class="col-lg-6">
+                      <h6><strong>Religion : </strong>Islam</h6>
+                      <h6><strong>Mother Tongue : </strong>Bengali</h6>
+                      <h6><strong>Occupation : </strong>Student</h6>
+                      <h6><strong>Marital Status : </strong>Single</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 p-0">
+                <div class="cmn-btn">
+                  <a class="btn btn-primary" href="#" role="button">Edit</a>
+                  <a class="btn btn-primary" href="#" role="button">Feedback</a>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <h6>Personality, Family Details, Career, Partner Expectations etc.</h6>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="border-btm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore iste cumque libero consequatur, nemo cum est dolorum numquam a sunt praesentium nihil facilis repellat reprehenderit veniam provident? Recusandae, fuga asperiores.</p>
+                </div>
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <h6>Basics & Lifestyle</h6>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-btm"></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="basics">
+                        <h5><strong>Age : </strong>24</h5>
+                        <h5><strong>Date of Birth : </strong>14/11/1995</h5>
+                        <h5><strong>Marital Status : </strong>Single</h5>
+                        <h5><strong>Body Weight : </strong>58kg</h5>
+                        <h5><strong>Grew up in : </strong>Bangladesh</h5>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="basics ml-btm">
+                        <h5><strong>Diet : </strong>Not Specified</h5>
+                        <h5><strong>Personal Values : </strong>Will tell you later</h5>
+                        <h5><strong>Sun Sign : </strong>Scorpio</h5>
+                        <h5><strong>Blood Group : </strong>Ab+</h5>
+                        <h5><strong>Health Information: </strong>Not Specified</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <h6>Religious Background</h6>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-btm"></div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="basics">
+                        <h5><strong>Religion : </strong>Muslim</h5>
+                        <h5><strong>Community : </strong>Sunni</h5>
+                        <h5><strong>Sub community : </strong>Not Specified</h5>
+                        <h5><strong>Mother Tongue : </strong>Bengali</h5>
+                        <h5><strong>Can speak : </strong>Not Specified</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <h6>Family Details</h6>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-btm"></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="basics">
+                        <h5><strong>Father's Status : </strong>Not Specified</h5>
+                        <h5><strong>Mother's Status : </strong>Not Specified</h5>
+                        <h5><strong>Family Location : </strong>Not Specified</h5>
+                        <h5><strong>Native Place : </strong>Not Specified</h5>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="basics ml-btm">
+                        <h5><strong>No. of Brothers : </strong>Not Specified</h5>
+                        <h5><strong>No. of Sisters : </strong>Not Specified</h5>
+                        <h5><strong>Family Values : </strong>Not Specified</h5>
+                        <h5><strong>Family Affluence : </strong>Not Specified</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <h6>Education & Career</h6>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-btm"></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="basics">
+                        <h5><strong>Education : </strong>Bachelors - Computers/ IT</h5>
+                        <h5><strong>University : </strong>Eastern University</h5>
+                        <h5><strong>Annual Income : </strong>Upto USD 40K</h5>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="basics ml-btm">
+                        <h5><strong>Working With : </strong>Private Company</h5>
+                        <h5><strong>Working As : </strong>Web / UX Designers</h5>
+                        <h5><strong>Employer Name : </strong>SheBa Web Technology LLC</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <h6>Location of Groom</h6>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-btm"></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="basics">
+                        <h5><strong>Current Residence : </strong>Dhaka, Bangladesh</h5>
+                        <h5><strong>State Of Residence : </strong>Dhaka</h5>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="basics ml-btm">
+                        <h5><strong>Residency Status : </strong>Citizen</h5>
+                        <h5><strong>Zip / Pin code : </strong>1207</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- View Profile Part End -->
+
+  <!-- Footer Part Start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><strong>Our Sister Organizations:</strong> <a href="#">Waste Technologies LLC</a> || <a href="#">TazaBazar</a> || <a href="#">NK Web Technology</a></h4>
+          <h5>Copyright © 2020 Zibonshathi All Rights Reserved</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Part End -->
+
+
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+</body>
+</html>

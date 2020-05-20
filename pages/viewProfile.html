@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="viewProfile">
-  <!-- Navbar Part Star -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+   <!-- Navbar Part Star -->
+   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="../index.html"><img src="../images/zibonshathi.png" alt="logo" style="width: 130px; height: 65px;"></a>
+      <a class="navbar-brand" href="../index.html"><img src="../images/zibonshathi.png" alt="logo" style="width: 140px; height: 75px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,7 +67,7 @@
               </form>
               <p>New to Zibonshathi?</p>
               <div class="reg">
-                <a class="btn btn-primary" href="#" role="button">Register Now</a>
+                <a class="btn btn-primary" href="../pages/register.html" role="button">Register Now</a>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@
               </div>
               <div class="col-lg-2 p-0">
                 <div class="cmn-btn">
-                  <a class="btn btn-primary" href="#" role="button">Edit</a>
+                  <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#exampleModal2">Edit</a>
                   <a class="btn btn-primary" href="#" role="button">Feedback</a>
                 </div>
               </div>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-lg-2">
                       <div class="edit-btn text-right">
-                        <a href="#" role="button">Edit</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal3">Edit</a>
                       </div>
                     </div>
                   </div>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="col-lg-2">
                       <div class="edit-btn text-right">
-                        <a href="#" role="button">Edit</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal4">Edit</a>
                       </div>
                     </div>
                   </div>
@@ -175,7 +175,7 @@
                     </div>
                     <div class="col-lg-2">
                       <div class="edit-btn text-right">
-                        <a href="#" role="button">Edit</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal5">Edit</a>
                       </div>
                     </div>
                   </div>
@@ -199,7 +199,7 @@
                     </div>
                     <div class="col-lg-2">
                       <div class="edit-btn text-right">
-                        <a href="#" role="button">Edit</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal6">Edit</a>
                       </div>
                     </div>
                   </div>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="col-lg-2">
                       <div class="edit-btn text-right">
-                        <a href="#" role="button">Edit</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal7">Edit</a>
                       </div>
                     </div>
                   </div>
@@ -259,7 +259,7 @@
                     </div>
                     <div class="col-lg-2">
                       <div class="edit-btn text-right">
-                        <a href="#" role="button">Edit</a>
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal8">Edit</a>
                       </div>
                     </div>
                   </div>
@@ -289,6 +289,506 @@
     </div>
   </section>
   <!-- View Profile Part End -->
+
+  <!-- Profile Edit Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName1">Name :</label>
+                  <input type="text" class="form-control" id="inputName1" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState">Religion :</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Select</option>
+                    <option>Islam</option>
+                    <option>Hindu</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail4">Email :</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName2">Mother Tongue :</label>
+                  <input type="text" class="form-control" id="inputName2" placeholder="Mother Tongue">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName3">Occupation :</label>
+                  <input type="text" class="form-control" id="inputName3" placeholder="Occupation">
+                </div>
+              </div> 
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputState2">Gender :</label>
+                  <select id="inputState2" class="form-control">
+                    <option selected>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputNumber1">Age :</label>
+                  <input type="number" class="form-control" id="inputNumber1" placeholder="Age">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState3">Height :</label>
+                  <select id="inputState3" class="form-control">
+                    <option selected>Select</option>
+                    <option>5'6</option>
+                    <option>5'7</option>
+                  </select>
+                </div>
+              </div>  
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName5">Location :</label>
+                  <input type="text" class="form-control" id="inputName5" placeholder="Location">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName6">Marital Status :</label>
+                  <input type="text" class="form-control" id="inputName6" placeholder="Marital Status">
+                </div>
+              </div> 
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Profile Edit Modal End -->
+
+  <!-- Information Details Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Personality</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here"></textarea>
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Information Details Modal End -->
+
+  <!-- Basic & Lifestyle Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Basics & Lifestyle</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputNumber2">Age :</label>
+                  <input type="number" class="form-control" id="inputNumber2" placeholder="Age">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName7">Diet :</label>
+                  <input type="text" class="form-control" id="inputName7" placeholder="Diet">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputDate1">Date of Birth :</label>
+                  <input type="date" class="form-control" id="inputDate1" placeholder="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName8">Personal Values :</label>
+                  <input type="text" class="form-control" id="inputName8" placeholder="Personal Values">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName9">Marital Status :</label>
+                  <input type="text" class="form-control" id="inputName9" placeholder="Marital Status">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName10">Sun Sign :</label>
+                  <input type="text" class="form-control" id="inputName10" placeholder="Sun Sign">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputNumber3">Body Weight :</label>
+                  <input type="number" class="form-control" id="inputNumber3" placeholder="Body Weight">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState4">Blood Group :</label>
+                  <select id="inputState4" class="form-control">
+                    <option selected>Select</option>
+                    <option>Ab+</option>
+                    <option>A+</option>
+                    <option>A- </option>
+                    <option>Ab- </option>
+                    <option>B+</option>
+                    <option>B- </option>
+                    <option>O+</option>
+                    <option>O- </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState5">Grew up in :</label>
+                  <select id="inputState5" class="form-control">
+                    <option selected>Select</option>
+                    <option>Bangladesh</option>
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>Sri lanka</option>
+                    <option>Australia</option>
+                    <option>USA</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName11">Health Information :</label>
+                  <input type="text" class="form-control" id="inputName11" placeholder="Health Information">
+                </div>
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Basic & Lifestyle Modal End -->
+
+  <!-- Religious Background Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Religious Background</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState6">Religion :</label>
+                  <select id="inputState6" class="form-control">
+                    <option selected>Select</option>
+                    <option>Islam</option>
+                    <option>Hindu</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState7">Community :</label>
+                  <select id="inputState7" class="form-control">
+                    <option selected>Select</option>
+                    <option>Sunni</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState8">Sub community :</label>
+                  <select id="inputState8" class="form-control">
+                    <option selected>Select</option>
+                    <option>None</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName12">Mother Tongue :</label>
+                  <input type="text" class="form-control" id="inputName12" placeholder="Mother Tongue">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputName13">Can speak :</label>
+                <input type="text" class="form-control" id="inputName13" placeholder="Write Here">
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Religious Background Modal End -->
+
+  <!-- Family Details Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Family Details</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName14">Father's Status :</label>
+                  <input type="text" class="form-control" id="inputName14" placeholder="Write Here">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName15">Mother's Status :</label>
+                  <input type="text" class="form-control" id="inputName15" placeholder="Write Here">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState9">No. of Brothers :</label>
+                  <select id="inputState9" class="form-control">
+                    <option selected>Select</option>
+                    <option>None</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState10">No. of Sisters :</label>
+                  <select id="inputState10" class="form-control">
+                    <option selected>Select</option>
+                    <option>None</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState11">Family Location :</label>
+                  <select id="inputState11" class="form-control">
+                    <option selected>Select</option>
+                    <option>Bangladesh</option>
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>Sri lanka</option>
+                    <option>Australia</option>
+                    <option>USA</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName16">Family Values :</label>
+                  <input type="text" class="form-control" id="inputName16" placeholder="Write Here">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState12">Native Place :</label>
+                  <select id="inputState12" class="form-control">
+                    <option selected>Select</option>
+                    <option>Bangladesh</option>
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>Sri lanka</option>
+                    <option>Australia</option>
+                    <option>USA</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName17">Family Affluence :</label>
+                  <input type="text" class="form-control" id="inputName17" placeholder="Write Here">
+                </div>
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Family Details Modal End -->
+
+  <!-- Education & Career Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Education & Career</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState13">Education :</label>
+                  <select id="inputState13" class="form-control">
+                    <option selected>Select</option>
+                    <option>Bachelors - Computers/ IT</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState14">University :</label>
+                  <select id="inputState14" class="form-control">
+                    <option selected>Select</option>
+                    <option>Eastern University</option>
+                    <option>Bangladesh University</option>
+                    <option>North South University</option>
+                    <option>Daffodil University</option>
+                    <option>East West University</option>
+                    <option>Green University</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState15">Working With :</label>
+                  <select id="inputState15" class="form-control">
+                    <option selected>Select</option>
+                    <option>Private Company</option>
+                    <option>Government Company</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState16">Working As :</label>
+                  <select id="inputState16" class="form-control">
+                    <option selected>Select</option>
+                    <option>Web / UX Designers</option>
+                    <option>Graphics Designer</option>
+                    <option>Front-end Developer</option>
+                    <option>Back-end Developer</option>
+                    <option>Product Manager</option>
+                    <option>Sales Executive</option>
+                    <option>Data Entry</option>
+                    <option>Marketing</option>
+                    <option>Android Developer</option>
+                    <option>IOS Developer</option>
+                    <option>Digital Marketing</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState17">Annual Income :</label>
+                  <select id="inputState17" class="form-control">
+                    <option selected>Select</option>
+                    <option>Upto 40K</option>
+                    <option>50K</option>
+                    <option>60K</option>
+                    <option>70K</option>
+                    <option>80K</option>
+                    <option>90K</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName18">Employer Name :</label>
+                  <input type="text" class="form-control" id="inputName18" placeholder="Write Here">
+                </div>
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Education & Career Modal End -->
+
+  <!-- Location of Groom Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Location of Groom</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName19">Current Residence :</label>
+                  <input type="text" class="form-control" id="inputName19" placeholder="Write Here">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName20">State Of Residence :</label>
+                  <input type="text" class="form-control" id="inputName20" placeholder="Write Here">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName21">Residency Status :</label>
+                  <input type="text" class="form-control" id="inputName21" placeholder="Write Here">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName22">Zip / Pin code :</label>
+                  <input type="text" class="form-control" id="inputName22" placeholder="Write Here">
+                </div>
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Location of Groom Modal End -->
 
   <!-- Footer Part Start -->
   <footer id="footer">

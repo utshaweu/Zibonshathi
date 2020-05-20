@@ -29,15 +29,15 @@ p,span,a{
   display: none;
 }
 .navbar{
-  padding-top: 15px;
-  padding-bottom: 15px;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 99; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  background: #f5f5f5;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
+  color: #ee9046;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -48,7 +48,7 @@ p,span,a{
   padding-left: 15px;
 }
 .navbar-light .navbar-nav .nav-link:focus {
-  color: #ffffff;
+  color: #ee9046;
 }
 .navbar-light .navbar-nav .nav-link:hover{
   color: #ee9046;
@@ -59,7 +59,7 @@ p,span,a{
 .navbar-light .navbar-nav .nav-link .help{
   font-size: 16px;
   margin-right: 6px;
-  border: 1px solid #ffffff;
+  border: 1px solid #ee9046;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -407,7 +407,7 @@ p,span,a{
 }
 
 /* ===================================================================================================
-                                            Featured Profile Part Css 
+                                            Featured Male Profile Part Css 
 ==========================================================================================================*/
 #featured{
   padding-top: 70px;
@@ -466,6 +466,46 @@ p,span,a{
   background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }
 
+/* ==========================================================================================================
+                                       Featured Female Profile Part Css
+========================================================================================================= */
+#featured2{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#featured2 .card-body span{
+  display: block;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+}
+#featured2 .card{
+  border: 1px solid rgba(221,221,221.4);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all linear .3s;
+}
+#featured2 .card:hover{
+  -webkit-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
+  -moz-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
+  box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
+  transform: translateY(-2px);
+}
+#featured2 .card-body .btn{
+  margin-top: 20px;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+#featured2 .card-body .btn:hover{
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
+}
 
 /* ===================================================================================================
                                              Stories Part Css
@@ -633,30 +673,11 @@ p,span,a{
 /* ====================================================================================================
                                         View Profile Navbar Part Css
 ======================================================================================================= */
-.bg-light {
-  background-color: #c58070!important;
-}
-#viewProfile .navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, .8);
-  position: relative;
-}
-#viewProfile .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffffff;
-}
-#viewProfile .navbar-light .navbar-nav .nav-link:hover .help{
-  border: 1px solid #fff;
-}
-#viewProfile #footer{
-  background: rgb(172,125,109);
-  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
-}
-#viewProfile .pro-img{
+.pro-img{
   position: relative;
   cursor: pointer;
 }
-#viewProfile .pro-img .overlay{
+.pro-img .overlay{
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -666,15 +687,15 @@ p,span,a{
   transform: scale(0);
   transition: all linear .3s;
 }
-#viewProfile .pro-img .overlay h5{
+.pro-img .overlay h5{
   font-size: 14px;
   text-align: center;
   margin-top: 5px;
 }
-#viewProfile .pro-img .overlay h5 a{
+.pro-img .overlay h5 a{
   color: #fff;
 }
-#viewProfile .pro-img:hover .overlay{
+.pro-img:hover .overlay{
   transform: scale(1);
 }
 #v-profile{
@@ -753,6 +774,127 @@ p,span,a{
   border-left: 1px solid rgba(221,221,221,0.6);
   padding-left: 20px;
 }
-#viewProfile #featured{
-  padding-bottom: 40px;
+
+/* ========================================================================================================
+                                               Registration Part Css
+========================================================================================================= */
+.regis-form{
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 8px;
+}
+.regis-form h3{
+  text-align: center;
+  color: #444444;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 65px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.regis-form .form-group label{
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+}
+.regis-form .form-control{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  height: calc(2.90rem + 2px);
+  border-radius: 5px;
+}
+.regis-form .form-control:focus {
+  color: #666666;
+  background-color: #fff;
+  border-color: #ac7d6d;
+  box-shadow: none;
+}
+.regis-btn{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.regis-btn .btn{
+  width: 100%;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.regis-form .btn:hover{
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
+}
+.already h6{
+  color: #444444;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.already a{
+  background: rgb(234,110,14);
+  background: linear-gradient(90deg, rgba(234,110,14,1) 0%, rgba(238,144,70,1) 35%, rgba(234,110,14,1) 100%);
+  border: 1px solid #ee9046;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #f5f5f5;
+  padding: 8px 28px;
+}
+.already a:hover{
+  background: linear-gradient(90deg, rgb(238, 144, 70) 0%, rgb(234, 110, 14) 35%, rgb(238, 144, 70) 100%);
+}
+/* =====================================================================================================
+                                          Profile Edit Modal Css
+======================================================================================================== */
+.pro-edit-modal .modal-content {
+  padding: 30px 50px;
+}
+.pro-edit-modal .modal-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ea6e0e;
+}
+.pro-edit-modal .form-group label{
+  font-family: 'Roboto', sans-serif;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 500;
+}
+.pro-edit-modal .form-control{
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.pro-edit-modal .form-control:focus{
+  box-shadow: none;
+  border-color: #c58070;
+}
+.pro-edit-modal-btn .btn{
+  width: 100%;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.pro-edit-modal-btn .btn:hover{
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }

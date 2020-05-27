@@ -779,7 +779,6 @@ p,span,a{
                                                Registration Part Css
 ========================================================================================================= */
 .regis-form{
-  padding: 25px;
   margin-top: 30px;
   margin-bottom: 30px;
   box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
@@ -895,6 +894,219 @@ p,span,a{
   letter-spacing: 1px;
 }
 .pro-edit-modal-btn .btn:hover{
+  background: rgb(197,128,112);
+  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
+}
+
+/* =========================================================================================================
+                                                About Us Part Css
+========================================================================================================= */
+#about{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about-us{
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 8px;
+}
+.about-img img{
+  border-radius: 50%;
+}
+.about-text{
+  padding: 15px;
+  text-align: center;
+}
+.about-text h6{
+  font-size: 18px;
+  font-weight: 600;
+  color: #444444;
+}
+.about-text span{
+  font-size: 16px;
+  color: #666666;
+  font-weight: 400;
+}
+.about-icon{
+  text-align: center;
+}
+.about-icon i{
+  font-size: 16px;
+  color: #444444;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: all linear .3s;
+}
+.about-icon i:hover{
+  background: #ac7d6d;
+  color: #fff;
+}
+.about-details{
+  padding: 0 30px;
+}
+.about-details p{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.about-details h6{
+  font-size: 18px;
+  color: #ea6e0e;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* =======================================================================================================
+                                              Terms Of Use Part Css
+========================================================================================================= */
+#terms{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.terms-details{
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 8px;
+}
+.terms-details h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 30px;
+}
+.terms-details h6{
+  color: #ea6e0e;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.terms-details span{
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.terms-details ul li{
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+/* =======================================================================================================
+                                        Privacy Policy Part Css
+========================================================================================================= */
+#privacy{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.privacy-details{
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 8px;
+}
+.privacy-details h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 30px;
+}
+.privacy-details span{
+  display: block;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.privacy-details h6{
+  color: #ea6e0e;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.privacy-details ul li{
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+/* ========================================================================================================
+                                               Contact Us Part Css
+========================================================================================================= */
+#cont{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.c-form{
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius: 8px;
+}
+.c-form h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 15px;
+}
+.c-form p{
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+}
+.c-form .form-group label{
+  color: #ea6e0e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.c-form .form-group .form-control{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+.c-form .form-group .form-control:focus{
+  box-shadow: none;
+  border-color: #ac7d6d;
+}
+.sub-form{
+  text-align: center;
+  margin-top: 30px;
+}
+.sub-form .btn{
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.sub-form .btn:hover{
   background: rgb(197,128,112);
   background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }

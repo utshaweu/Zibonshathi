@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zibonshathi Matrimonial Website</title>
+  <link rel="icon" href="images/zibonshathi.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
@@ -29,7 +30,7 @@
             <i class="fas fa-headset help"></i> Help <i class="fas fa-chevron-down"></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Help Desk</a>
+            <a class="dropdown-item" href="./pages/help.html">Help Desk</a>
             <a class="dropdown-item" href="#">Be Safe Online</a>
           </div>
         </li>   
@@ -127,7 +128,7 @@
                </div>
                <div class="col-lg-2">
                 <div class="search-btn">
-                  <button type="submit" class="btn btn-primary" style="width: 100%;">Search</button>
+                  <button type="submit" class="btn btn-primary" style="width: 100%;"><a href="./pages/searchPage.html">Search</a></button>
                 </div>
                </div>
              </div>
@@ -439,9 +440,9 @@
           <div class="cont-content text-center">
             <h5>Need Help?</h5>
             <div class="cont-span">
-              <span><a href="#">Member Login</a></span>
-              <span><a href="#">Sign Up</a></span>
-              <span><a href="#">Partner Search</a></span>
+              <span><a href="#" data-toggle="modal" data-target="#exampleModal">Member Login</a></span>
+              <span><a href="./pages/register.html">Sign Up</a></span>
+              <span><a href="./pages/partnerSearch.html">Partner Search</a></span>
               <span><a href="#">How to Use Zibonshathi.com</a></span>
               <span><a href="#">Premium Memberships</a></span>
               <span><a href="#">Customer Support</a></span>
@@ -501,6 +502,12 @@
     </div>
   </footer>
   <!-- Footer Part End -->
+
+  <!--Back to Top Part Start-->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!--Back to Top Part End-->
 
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

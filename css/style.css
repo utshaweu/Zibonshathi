@@ -168,6 +168,19 @@ p,span,a{
   background: linear-gradient(90deg, rgba(238,144,70,1) 0%, rgba(234,110,14,1) 35%, rgba(238,144,70,1) 100%);
 }
 
+.menu-bg{
+  background: #f5f5f5;
+  position: fixed;
+  animation: bg 1s;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+@keyframes bg{
+  from{top: -50px;}
+  to{top: 0px;}
+}
 
 /* ===================================================================================================
                                                Banner Part Css
@@ -226,6 +239,9 @@ p,span,a{
 }
 .banner-content-search .search-btn{
   margin-top: 32px;
+}
+.banner-content-search .search-btn a{
+  color: #fff;
 }
 .banner-content-search .search-btn .btn{
   background: rgb(234,110,14);
@@ -592,6 +608,7 @@ p,span,a{
   cursor: pointer;
   transition: all linear .3s;
   height: 300px;
+  background: #fff;
 }
 .cont-content:hover{
   transform: translateY(-2px);
@@ -628,7 +645,7 @@ p,span,a{
   line-height: 40px;
   text-align: center;
   font-size: 16px;
-  background: #ffffff;
+  background: #f5f5f5;
   border-radius: 50%;
   transition: all linear .3s;
 }
@@ -669,6 +686,28 @@ p,span,a{
   color: #444;
 }
 
+/* ===============================================================================================
+                                           Back to Top Part Css
+=================================================================================================== */
+.back-to-top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9999;
+  display: none;
+}
+.back-to-top i{
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
+  border-radius: 3px;
+}
 
 /* ====================================================================================================
                                         View Profile Navbar Part Css
@@ -1109,4 +1148,90 @@ p,span,a{
 .sub-form .btn:hover{
   background: rgb(197,128,112);
   background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
+}
+
+/* ====================================================================================================
+                                             Help Part Css
+====================================================================================================== */
+#help{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.help-details{
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius: 8px;
+}
+.help-details h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 30px;
+}
+.help-details h6{
+  color: #ea6e0e;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.help-details span{
+  display: block;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+}
+.help-details ul li{
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+/* ========================================================================================================
+                                         Partner Search Part Css 
+=========================================================================================================*/
+#partner-search{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.partner-details{
+  box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
+  background: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius: 8px;
+}
+.partner-details h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 30px;
+}
+.partner-details h6{
+  color: #ea6e0e;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.partner-details span{
+  display: block;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+/* ================================================================================================
+                                            Search Part Css
+=================================================================================================== */
+.search-content{
+  min-height: 100vh;
 }

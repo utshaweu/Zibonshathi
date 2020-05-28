@@ -429,25 +429,25 @@ p,span,a{
   padding-top: 70px;
   padding-bottom: 70px;
 }
-#featured .card-body span{
+.common-card-item .card-body span{
   display: block;
   color: #666666;
   font-weight: 400;
   font-size: 16px;
 }
-#featured .card{
+.common-card-item .card{
   border: 1px solid rgba(221,221,221.4);
   border-radius: 8px;
   cursor: pointer;
   transition: all linear .3s;
 }
-#featured .card:hover{
+.common-card-item .card:hover{
   -webkit-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
   -moz-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
   box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
   transform: translateY(-2px);
 }
-#featured .card-body .btn{
+.common-card-item .card-body .btn{
   margin-top: 20px;
   background: rgb(172,125,109);
   background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
@@ -458,7 +458,7 @@ p,span,a{
   font-size: 14px;
   text-transform: capitalize;
 }
-#featured .card-body .btn:hover{
+.common-card-item .card-body .btn:hover{
   background: rgb(197,128,112);
   background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }
@@ -482,47 +482,20 @@ p,span,a{
   background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
 }
 
-/* ==========================================================================================================
+/*=========================================================================================================
                                        Featured Female Profile Part Css
 ========================================================================================================= */
 #featured2{
   padding-top: 70px;
   padding-bottom: 70px;
 }
-#featured2 .card-body span{
-  display: block;
-  color: #666666;
-  font-weight: 400;
-  font-size: 16px;
+/* ===================================================================================================
+                                               View All Male Part Css
+====================================================================================================== */
+#view-all-male{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-#featured2 .card{
-  border: 1px solid rgba(221,221,221.4);
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all linear .3s;
-}
-#featured2 .card:hover{
-  -webkit-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
-  -moz-box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
-  box-shadow: 1px 3px 0px 0px rgba(221,221,221,0.5);
-  transform: translateY(-2px);
-}
-#featured2 .card-body .btn{
-  margin-top: 20px;
-  background: rgb(172,125,109);
-  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
-  border: 1px solid #ac7d6d;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-#featured2 .card-body .btn:hover{
-  background: rgb(197,128,112);
-  background: linear-gradient(90deg, rgba(197,128,112,1) 0%, rgba(172,125,109,1) 35%, rgba(197,128,112,1) 100%); 
-}
-
 /* ===================================================================================================
                                              Stories Part Css
 ======================================================================================================= */
@@ -1232,6 +1205,10 @@ p,span,a{
 /* ================================================================================================
                                             Search Part Css
 =================================================================================================== */
+#search-page{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .search-content{
   min-height: 100vh;
 }

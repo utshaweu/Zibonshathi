@@ -174,7 +174,7 @@ p,span,a{
   animation: bg 1s;
   width: 100%;
   top: 0;
-  z-index: 99999;
+  z-index: 999;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 @keyframes bg{
@@ -634,8 +634,7 @@ p,span,a{
                                             Footer Part Css
 ==================================================================================================== */
 #footer{
-  background: rgb(234,110,14);
-  background: linear-gradient(90deg, rgba(234,110,14,1) 0%, rgba(238,144,70,1) 35%, rgba(234,110,14,1) 100%);
+  background: #222222;
   padding-top: 23px;
   padding-bottom: 16px;
   text-align: center;
@@ -656,7 +655,7 @@ p,span,a{
 }
 
 #footer h4 a:hover{
-  color: #444;
+  color: #ea6e0e;
 }
 
 /* ===============================================================================================
@@ -1063,8 +1062,8 @@ p,span,a{
                                                Contact Us Part Css
 ========================================================================================================= */
 #cont{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .c-form{
   box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
@@ -1211,4 +1210,78 @@ p,span,a{
 }
 .search-content{
   min-height: 100vh;
+}
+
+
+/* ====================================================================================================
+                                           Membership Part Css
+===================================================================================================== */
+#membership{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.plan-content{
+  padding: 25px 35px;
+  border: 1px solid rgba(234,110,14,.5);
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all linear .3s;
+  cursor: pointer;
+  position: relative;
+}
+.plan-content:hover{
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(238,144,70,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(238,144,70,0.5);
+  box-shadow: 0px 0px 5px 0px rgba(238,144,70,0.5);
+  transform: translateY(-2px);
+}
+.plan-content .plan-img{
+  text-align: center;
+}
+.plan-content .plan-img img{
+  width: 90px;
+  height: 90px;
+}
+.plan-content h3{
+  font-size: 35px;
+  font-weight: 500;
+  color: #444444;
+  margin-top: 10px;
+}
+.plan-content h4{
+  font-size: 28px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 10px;
+}
+.plan-content .body span{
+  display: block;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+}
+.plan-content .body span i{
+  color: #ea6e0e;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.plan-content p{
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.plan-content h5{
+  background: rgb(172,125,109);
+  background: linear-gradient(90deg, rgba(172,125,109,1) 0%, rgba(197,128,112,1) 35%, rgba(172,125,109,1) 100%);
+  border: 1px solid #ac7d6d;
+  display: inline;
+  border-radius: 5px;
+  padding: 6px 15px;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: -17px;
+  left: 96px;
 }

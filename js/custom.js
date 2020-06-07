@@ -6,10 +6,10 @@ $(function(){
     var scrolling = $(this).scrollTop();
      
      if(scrolling > 50){
-         $(".navbar").addClass("menu-bg");
+         $(".nav-bg").addClass("menu-bg");
      }
      else{
-         $(".navbar").removeClass("menu-bg");
+         $(".nav-bg").removeClass("menu-bg");
      }
      if(scrolling > 100){
          back2top.fadeIn(500);

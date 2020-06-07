@@ -435,6 +435,9 @@ p,span,a{
   font-weight: 400;
   font-size: 16px;
 }
+.common-card-item .card-img-top{
+  width: 100%;
+}
 .common-card-item .card{
   border: 1px solid rgba(221,221,221.4);
   border-radius: 8px;
@@ -634,7 +637,7 @@ p,span,a{
                                             Footer Part Css
 ==================================================================================================== */
 #footer{
-  background: #222222;
+  background: #252428;
   padding-top: 23px;
   padding-bottom: 16px;
   text-align: center;
@@ -1062,8 +1065,8 @@ p,span,a{
                                                Contact Us Part Css
 ========================================================================================================= */
 #cont{
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .c-form{
   box-shadow: rgba(238, 143, 70, 0.6) 0px 1px 5px 0px;
@@ -1217,8 +1220,8 @@ p,span,a{
                                            Membership Part Css
 ===================================================================================================== */
 #membership{
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .plan-content{
   padding: 25px 35px;

@@ -1,0 +1,397 @@
+/* ====================================================================================================
+                                        Extra Small Device
+====================================================================================================== */
+@media(max-width: 575.98px){
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+  button:focus {
+    outline: 0;
+  }
+  .navbar-toggler i{
+    color: #3A3A3A;
+    font-size: 24px;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    display: inline-block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
+  .banner-contents {
+    padding-top: 30px;
+  }
+  .banner-content h2{
+    font-size: 30px;
+  }
+  #banner {
+    height: 615px;
+  }
+  #work {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .title h2 {
+    font-size: 19px;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+  .work-content h3{
+    font-size: 19px;
+  }
+  .work-content{
+    margin-bottom: 30px;
+  }
+  .service-content {
+    margin-bottom: 30px;
+  }
+  #service {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+  .cmn-btn{
+    text-align: center;
+  }
+  #featured {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .common-card-item .card {
+    margin-bottom: 30px;
+  }
+  .view-all {
+    margin-top: 15px;
+  }
+  #featured2 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  #stories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .cont-content {
+    margin-bottom: 30px;
+  }
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .about-details h6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about-us {
+    padding: 20px;
+  }
+  .about-details {
+    padding: 0px 20px;
+  }
+  .form-group {
+    text-align: center;
+  }
+  .help-details span {
+    font-size: 15px;
+  }
+  .help-details {
+    padding: 25px;
+  }
+  .help-details ul li {
+    margin-left: 15px;
+  }
+  #membership {
+    margin-bottom: 10px;
+  }
+  .plan-content {
+    margin-bottom: 30px;
+  }
+  .plan-content h5 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .privacy-details ul li {
+    margin-left: 20px;
+  }
+  .regis-form h3 {
+    padding: 0 0px;
+  }
+  #view-all-male {
+    margin-bottom: 20px;
+  }
+  .pro-img {
+    margin-bottom: 30px;
+  }
+  .v-pro-cmn h6 {
+    font-size: 16px;
+  }
+  .edit-btn a {
+    font-size: 16px;
+  }
+  .cmn-btn {
+    margin-top: 20px;
+  }
+  .v-pro-cmn p {
+    font-size: 14px;
+  }
+  .pro-img .overlay {
+    bottom: -2px;
+  }
+  .pro-edit-modal .modal-content {
+    padding: 25px 30px;
+  }
+  .ml-btm {
+    border-left: 0;
+    padding-left: 0px;
+  }
+  .pro-content{
+    text-align: center;
+  }
+}
+/* =======================================================================================================
+                                                  Small Device
+========================================================================================================= */
+@media(min-width:576px) and (max-width:767.98px){
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+  button:focus {
+    outline: 0;
+  }
+  .navbar-toggler i{
+    color: #3A3A3A;
+    font-size: 24px;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    display: inline-block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    text-align: center;
+    margin: 0 80px;
+  }
+  .banner-contents {
+    padding-top: 30px;
+  }
+  .banner-content h2{
+    font-size: 30px;
+  }
+  #banner {
+    height: 615px;
+  }
+  .banner-content-search label {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  #work {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+  .work-content {
+    margin-bottom: 30px;
+  }
+  #service {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+  .service-content p {
+    font-size: 13px;
+  }
+  .service-content {
+    margin-bottom: 30px;
+  }
+  .cmn-btn{
+    text-align: center;
+  }
+  #featured {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .common-card-item .card {
+    margin-bottom: 30px;
+  }
+  .view-all {
+    margin-top: 10px;
+  }
+  #featured2 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .cont-content {
+    margin-bottom: 30px;
+  }
+  .about-details h6 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .form-group {
+    text-align: center;
+  }
+  #membership {
+    margin-bottom: 10px;
+  }
+  .plan-content {
+    margin-bottom: 30px;
+  }
+  .plan-content h5 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #view-all-male {
+    margin-bottom: 20px;
+  }
+  .cmn-btn {
+    margin-top: 20px;
+  }
+}
+/* =======================================================================================================
+                                                Medium Device 
+==========================================================================================================*/
+@media(min-width:768px) and (max-width:991.98px){
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+  button:focus {
+    outline: 0;
+  }
+  .navbar-toggler i{
+    color: #3A3A3A;
+    font-size: 24px;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    display: inline-block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    text-align: center;
+    margin: 0 150px;
+  }
+  .banner-contents {
+    padding-top: 40px;
+  }
+  .banner-content h2{
+    font-size: 30px;
+  }
+  #banner {
+    height: 415px;
+  }
+  #work {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+  .work-content {
+    margin-bottom: 30px;
+  }
+  #service {
+    padding-top: 60px;
+    padding-bottom: 35px;
+  }
+  .service-content {
+    margin-bottom: 30px;
+  }
+  #featured {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .common-card-item .card {
+    margin-bottom: 30px;
+  }
+  .view-all {
+    margin-top: 10px;
+  }
+  #featured2 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  #stories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .cont-content {
+    margin-bottom: 30px;
+  }
+  .about-details h6 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  #membership {
+    margin-bottom: 10px;
+  }
+  .plan-content {
+    margin-bottom: 30px;
+  }
+  .plan-content h5 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #view-all-male {
+    margin-bottom: 20px;
+  }
+  .cmn-btn .btn {
+    margin-bottom: 10px;
+  }
+}
+/* =================================================================================================
+                                             Large Device
+==================================================================================================== */
+@media(min-width:992px) and (max-width:1199.98px){
+  .banner-content-search label {
+    font-size: 15px;
+  }
+  .work-content h3 {
+    font-size: 19px;
+  }
+  .service-content h3 {
+    font-size: 18px;
+  }
+  .service-content p {
+    font-size: 13px;
+  }
+  .service-content {
+    height: 390px;
+  }
+  .cont-span span a {
+    font-size: 14px;
+  }
+  .plan-content h5 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .regis-form h3 {
+    padding: 0 45px;
+  }
+  .cmn-btn .btn {
+    margin-bottom: 10px;
+  }
+  #v-profile .pro-content h6 strong {
+    font-size: 14px;
+  }
+}

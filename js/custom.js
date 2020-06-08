@@ -19,6 +19,11 @@ $(function(){
      }
  });
 
+ // Closes responsive menu when a scroll link is clicked
+ $('.nav-link').on('click', function () {
+  $('.navbar-collapse').collapse('hide');
+});
+
 
   // Back to top js
   var back2top = $(".back-to-top");
@@ -26,6 +31,8 @@ $(function(){
   back2top.click(function(){
     html_body.animate({scrollTop:0},1000);
   });
+
+  
 
 
 

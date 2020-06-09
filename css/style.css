@@ -415,6 +415,10 @@ p,span,a{
   font-size: 16px;
   color: #fff;
   text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.cmn-btn .btn-primary.focus, .btn-primary:focus {
+  box-shadow: none;
 }
 .cmn-btn .btn:hover{
   background: rgb(238,144,70);
@@ -1215,6 +1219,10 @@ p,span,a{
   min-height: 100vh;
 }
 
+.pay-img{
+  position: relative;
+  bottom: 50px;
+}
 
 /* ====================================================================================================
                                            Membership Part Css

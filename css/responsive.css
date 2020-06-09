@@ -150,6 +150,9 @@
   .pro-content{
     text-align: center;
   }
+  .pro-edit-modal .modal-title{
+    font-size: 17px;
+  }
 }
 /* =======================================================================================================
                                                   Small Device

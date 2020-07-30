@@ -4,19 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zibonshathi Matrimonial Website</title>
-  <link rel="icon" href="images/zibonshathi.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <!-- Preloader Part Start -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="icon heart">
+        <svg viewBox="-5 -28 521.00002 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+                d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"
+                />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader Part End -->
+
   
   <!-- Navbar Part Star -->
   <nav class="navbar nav-bg navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="./images/zibonshathi.png" alt="logo" style="width: 140px; height: 75px;"></a>
+      <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt="logo" style="width: 185px; height: 75px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
@@ -27,13 +43,13 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Works</a>
+          <a class="nav-link" href="#work">Works</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#service">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Stories</a>
+          <a class="nav-link" href="#stories">Stories</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login <i class="fas fa-chevron-down"></i><span class="sr-only">(current)</span></a>
@@ -57,7 +73,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><img src="./images/zibonshathi.png" alt="logo" style="width: 130px; height: 65px;"></h5>
+            <h5 class="modal-title" id="exampleModalLabel"><img src="./images/logo2.png" alt="logo" style="width: 185px; height: 65px;"></h5>
             
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -80,6 +96,31 @@
                 </div>
                 <button type="submit" class="log btn btn-primary">Login</button>
               </form>
+              <div class="or">
+                <h6>Or</h6>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="cmn-part">
+                    <a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cmn-part mr5">
+                    <a href="#"><i class="fab fa-google-plus-g"></i> <span>Google</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cmn-part mr6">
+                    <a href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cmn-part mr7">
+                    <a href="#"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
+                  </div>
+                </div>
+              </div>
               <p>New to Zibonshathi?</p>
               <div class="reg">
                 <a class="btn btn-primary" href="./pages/register.html" role="button">Register Now</a>
@@ -96,50 +137,56 @@
   <section id="banner">
     <div class="container banner-contents">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-7">
+          <div class="banner-text wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
+            <h3>Welcome to Zibonshathi</h3>
+            <p>Zibonshathi is a Bangladesh based matrimonial introductions web site specially made for individuals who are living in Bangladesh and around the world. Zibonshathi makes it possible for members to communicate safely with matching profiles using the latest technology.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
           <div class="banner-content">
             <h2 class="text-center">Find your perfect life partner</h2>
           </div>
           <div class="banner-content-search">
             <form>
              <div class="row">
-               <div class="col-lg-2 col-md-6">
+               <div class="col-lg-6 col-md-6">
                 <label for="inputState">Looking For</label>
                 <select id="inputState" class="form-control">
                   <option selected>Male</option>
                   <option>Female</option>
                 </select>
                </div>
-               <div class="col-lg-2 col-md-6">
+               <div class="col-lg-6 col-md-6">
                 <label for="inputState2">Age</label>
                 <select id="inputState2" class="form-control">
                   <option selected>18</option>
                   <option>19</option>
                 </select>
                </div>
-               <div class="col-lg-2 col-md-6">
+               <div class="col-lg-6 col-md-6">
                 <label for="inputState3">To</label>
                 <select id="inputState3" class="form-control">
                   <option selected>28</option>
                   <option>29</option>
                 </select>
                </div>
-               <div class="col-lg-2 col-md-6">
+               <div class="col-lg-6 col-md-6">
                 <label for="inputState4">Religion</label>
                 <select id="inputState4" class="form-control">
                   <option selected>Islam</option>
                   <option>Hindu</option>
                 </select>
                </div>
-               <div class="col-lg-2 col-md-6">
+               <div class="col-lg-6 col-md-6">
                 <label for="inputState5">Country</label>
                 <select id="inputState5" class="form-control">
-                  <option selected>Pakistan</option>
-                  <option>Bangladesh</option>
+                  <option selected>Bangladesh</option>
+                  <option>Pakistan</option>
                   <option>India</option>
                 </select>
                </div>
-               <div class="col-lg-2 col-md-6">
+               <div class="col-lg-6 col-md-6">
                 <div class="search-btn">
                   <button type="submit" class="btn btn-primary" style="width: 100%;"><a href="">Search</a></button>
                 </div>
@@ -159,27 +206,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="title text-center">
+          <div class="title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h2>How Zibonshathi Works</h2>
             <p>Get Started in 3 Easy Steps</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="work-content text-center">
+          <div class="work-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
             <i class="fas fa-user"></i>
             <h3>Create Your Profile</h3>
             <p>Create your detail profile, add photos and describe your partner preference</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="work-content text-center">
+          <div class="work-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
             <i class="fas fa-search-plus"></i>
             <h3>Search Your Partner</h3>
             <p>Search your preferred partner by location, education, interest and so on</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-7 mx-auto">
-          <div class="work-content text-center">
+          <div class="work-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
             <i class="far fa-comments"></i>
             <h3>Start Communication</h3>
             <p>Start communication with suitable profiles by sending message & emails</p>
@@ -195,34 +242,34 @@
     <div class="container service-contents">
       <div class="row">
         <div class="col-lg-12">
-          <div class="title text-center">
+          <div class="title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h2 class="title-head">Zibonshathi Services</h2>
             <p class="title-head">Our Best Services</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="service-content text-center">
+          <div class="service-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
             <i class="fas fa-headset help"></i>
             <h3>24/7 Customer service</h3>
             <p>We provide customer support from 10 a.m. to 6 p.m. Clients can contact with us via email, phone and Facebook messenger. We try to give simple and expeditious solutions to your problems.</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="service-content text-center">
+          <div class="service-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
             <i class="fas fa-people-arrows"></i>
             <h3>Special consultancy</h3>
             <p>We advice on how to make your profile stand out. If you are a premium customer, we will aid you in search of suitable matches based on your preferences. We will aid you by providing some links of potential bride/groom based on your preference.</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="service-content text-center">
+          <div class="service-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
             <i class="fab fa-facebook-f"></i>
             <h3>Facebook page for live interaction</h3>
             <p>We have a facebook page where our clients may initiate live interaction with us. We try to solve any type of problems and answer any kind of query of our clients. Besides we sometime post our registered clients words about themselves in our page.</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="service-content text-center">
+          <div class="service-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <i class="fas fa-shield-alt"></i>
             <h3>Security and privacy ensured</h3>
             <p>Your photo, real name and complete profile will not be seen by any other user without your permission. For contact information user have to go through two step security process. We also verify mobile number and take necessary action against doubtful profile.</p>
@@ -239,10 +286,10 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <div class="row">
-            <div class="col-lg-9 col-12 col-md-9">
+            <div class="col-lg-9 col-12 col-md-9 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
               <h3 class="text-center">Register Free to find your Perfect Match!</h3>
             </div>
-            <div class="col-lg-3 col-12 col-md-3">
+            <div class="col-lg-3 col-12 col-md-3 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="cmn-btn">
                 <a class="btn btn-primary" href="./pages/register.html" role="button">Register Now</a>
               </div>
@@ -259,13 +306,13 @@
     <div class="container common-card-item">
       <div class="row">
         <div class="col-lg-12">
-          <div class="title text-center">
+          <div class="title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h2>All Male Profiles Featured</h2>
             <p>All Profiles Are Real and Verified, Feel Free to Contact Them</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
             <img class="card-img-top" src="./images/featured-01.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Mark Gamberther</span>
@@ -277,7 +324,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
             <img class="card-img-top" src="./images/featured-03.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Pablo Ibañez</span>
@@ -289,7 +336,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
             <img class="card-img-top" src="./images/featured-01.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Mark Gamberther</span>
@@ -301,7 +348,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <img class="card-img-top" src="./images/featured-03.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Pablo Ibañez</span>
@@ -313,7 +360,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="view-all text-center">
+          <div class="view-all text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
             <a href="./pages/viewallmale.html" class="btn btn-primary">View All</a>
           </div>
         </div>
@@ -328,13 +375,13 @@
     <div class="container common-card-item">
       <div class="row">
         <div class="col-lg-12">
-          <div class="title text-center">
+          <div class="title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h2>All Female Profiles Featured</h2>
             <p>All Profiles Are Real and Verified, Feel Free to Contact Them</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
             <img class="card-img-top" src="./images/featured-02.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Samantha Markesh</span>
@@ -346,7 +393,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
             <img class="card-img-top" src="./images/featured-04.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Christine Doe</span>
@@ -358,7 +405,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
             <img class="card-img-top" src="./images/featured-02.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Samantha Markesh</span>
@@ -370,7 +417,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card">
+          <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <img class="card-img-top" src="./images/featured-04.jpg" alt="Card image cap" style="height: 220px; border-radius: 8px;">
             <div class="card-body text-center">
               <span>Id: Christine Doe</span>
@@ -382,7 +429,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="view-all text-center">
+          <div class="view-all text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
             <a href="./pages/viewallfemale.html" class="btn btn-primary">View All</a>
           </div>
         </div>
@@ -396,8 +443,17 @@
     <div class="container str-content">
       <div class="row">
         <div class="col-lg-12">
-          <div class="title text-center title2">
+          <div class="title text-center title2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
             <h2 class="title-head">Thousand Of Success Stories</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row story-slider">
+        <div class="col-lg-6">
+          <div class="str-contents text-center">
+            <img src="./images/stories1.jpg" alt="img" class="img-border">
+            <p>Sonia was completing her BBA from Daffodil University. Her family was looking for a suitable husband. But they could not find anyone suited to her liking. One day Sonia learned about www.zibonshathi.com from Facebook.</p>
+            <h3>Sonia & Jahid</h3>
           </div>
         </div>
         <div class="col-lg-6">
@@ -415,9 +471,11 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12">
-        <div class="view-all text-center">
-          <a href="#" class="btn btn-primary">View All</a>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="view-all text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+            <a href="#" class="btn btn-primary">View All</a>
+          </div>
         </div>
       </div>
     </div>
@@ -430,10 +488,10 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <div class="row">
-            <div class="col-lg-8 col-md-8">
+            <div class="col-lg-8 col-md-8 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
               <h3 class="text-center">Post Your Success Story!</h3>
             </div>
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="cmn-btn">
                 <a class="btn btn-primary" href="./pages/register.html" role="button">Register Free Now</a>
               </div>
@@ -450,7 +508,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <div class="cont-content text-center">
+          <div class="cont-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
             <h5>Need Help?</h5>
             <div class="cont-span">
               <span><a href="#" data-toggle="modal" data-target="#exampleModal">Member Login</a></span>
@@ -464,7 +522,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="cont-content text-center">
+          <div class="cont-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
             <h5>Company</h5>
             <div class="cont-span">
               <span><a href="./pages/aboutUs.html">About Us</a></span>
@@ -476,8 +534,8 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="cont-content text-center">
-            <h5>Privacy & You</h5>
+          <div class="cont-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+            <h5>Privacy & Policy</h5>
             <div class="cont-span">
               <span><a href="./pages/termsOfUse.html">Terms Of Use</a></span>
               <span><a href="./pages/privacyPolicy.html">Privacy Policy</a></span>
@@ -487,7 +545,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="cont-content text-center">
+          <div class="cont-content text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h5>Follow us</h5>
             <div class="cont-spans">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -507,8 +565,8 @@
   <footer id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <h4><strong>Our Sister Organizations:</strong> <a href="#">Waste Technologies LLC</a> || <a href="#">TazaBazar</a> || <a href="#">NK Web Technology</a></h4>
+        <div class="col-lg-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <h4><strong>Our Sister Organizations:</strong> <a href="https://www.wastetechnologiesllc.com/" target="_blank">Waste Technologies LLC</a> || <a href="http://tazabazar.com/00/" target="_blank">TazaBazar</a> || <a href="http://nkwebtechnology.com/" target="_blank">NK Web Technology</a></h4>
           <h5>Copyright © 2020 Zibonshathi All Rights Reserved</h5>
         </div>
       </div>
@@ -525,6 +583,8 @@
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>

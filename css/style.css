@@ -716,7 +716,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
                                             Footer Part Css
 ==================================================================================================== */
 #footer{
-  background: #ec1e27;
+  background: #89c540;
   padding-top: 23px;
   padding-bottom: 16px;
   text-align: center;
@@ -737,7 +737,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 
 #footer h4 a:hover{
-  color: #89c540;
+  color: #ec1e27;
 }
 
 /* ===============================================================================================

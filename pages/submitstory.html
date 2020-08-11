@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Submit Story</title>
   <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -113,50 +113,92 @@
   </div>
   <!-- Navbar Part End -->
 
-  <!-- About Us Part Start -->
-  <section id="about">
+
+  <!-- Submit Story Part Start -->
+  <section id="submit-story">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="about-us">
-            <div class="row">
-              <div class="col-lg-3 col-sm-7 col-md-6 mx-auto">
-                <div class="about-img">
-                  <img src="../images/about-img.jpg" alt="about image" class="w-100">
-                  <div class="about-text">
-                    <h6>Founder & CEO</h6>
-                    <h6>Dr. Moinuddin Sarker</h6>
-                    <span>PhD, MCIC, FICER, MInstP, FARSS</span>
+        <div class="col-lg-8 m-auto">
+          <div class="submit-story-form">
+            <h5>Give us details of you & your partner</h5>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Your Name : </label>
+                    <input type="text" class="form-control form-control-lg" id="formGroupExampleInput">
                   </div>
-                  <div class="about-icon">
-                    <a href="https://www.linkedin.com/in/dr-moinuddin-sarker-phd-mcic-ficer-minstp-mrsc-farss-21b51810/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.facebook.com/moinuddin.sarker"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/moin1966?lang=en"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCuInQtyPE96uRO3M0x8jL6g"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Your Partner's Name : </label>
+                    <input type="text" class="form-control form-control-lg" id="formGroupExampleInput2">
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9">
-                <div class="about-details">
-                  <h6>About Us :</h6>
-                  <p>Zibonshathi is one of the service of the Noorzahan Kamal Web technology (NKWT). NKWT company operating web base service since early 2004 with full customer satisfaction.</p>
-                  <h6>Our Business Philosophy :</h6>
-                  <p>Zibonshathi is a web based marriage introduction service. The target audience are men and women living in Bangladesh and around the world looking to marry from these countries. The site is made with careful attention to the needs and sensibilities of people of Bangladesh. Specific care is taken not to expose the contact information of the members to prevent unwanted communication and maintain privacy.</p>
-                  <p>Starting in early 2020 Zibonshathi has begun requiring identity confirmation of all members including free members. This is one of the ways Zibonshathi.com is working to give its clients a safer and better experience. By preventing free searches by non members, Zibonshathi is further securing the privacy of its members and insuring that only people interested in marriage contact the members.</p>
-                  <p>Payments for membership can be made through our secure payment gateway or by check to the agent closest to you. We accept Visa and Master Card. Zibonshathi uses PayPal (the best payment gateway in the world).The management of Zibonshathi is dedicated to continuing investments in technology to stay at the cutting edge and provide its members with a safe and productive experience.</p>
-                  <p>A lot of effort is put into answering member queries. However the large amount of mail being presently received prevents instant response. Our current backlog is at 24 to 48 hours.</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="inputEmail4">Your Email Id : </label>
+                    <input type="email" class="form-control form-control-lg" id="inputEmail4">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="inputEmail5">Your Partner's Email Id : </label>
+                    <input type="email" class="form-control form-control-lg" id="inputEmail5">
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="inputDate1">When Did You First Meet? </label>
+                    <input type="date" class="form-control form-control-lg" id="inputDate1">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="inputDate2">Your Weeding Date : </label>
+                    <input type="date" class="form-control form-control-lg" id="inputDate2">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Tell Us How You Met Each Other On Zibonshathi.com</label>
+                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-check text-right">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      I agree to terms and conditions
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-btn text-center">
+                <button type="submit" class="btn btn-primary w-100" style="padding: 12px 0;">Submit Story</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- About Us Part End -->
+  <!-- Submit Story Part End -->
 
-  <!-- Contact Part Start -->
-  <section id="contact">
+
+
+
+   <!-- Contact Part Start -->
+   <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-sm-6">
@@ -167,7 +209,7 @@
               <span><i class="fas fa-angle-double-right"></i><a href="../pages/register.html">Sign Up</a></span>
               <span><i class="fas fa-angle-double-right"></i><a href="../pages/partnerSearch.html">Partner Search</a></span>
               <span><i class="fas fa-angle-double-right"></i><a href="../pages/membership.html">Premium Memberships</a></span>
-              <span><i class="fas fa-angle-double-right"></i><a href="./customersupport.html">Customer Support</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="#">Customer Support</a></span>
             </div>
           </div>
         </div>
@@ -195,7 +237,7 @@
           <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h5>More</h5>
             <div class="cont-span">
-              <span><i class="fas fa-angle-double-right"></i><a href="../pages/partnerSearch.html">Advanced Search</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="#">Advanced Search</a></span>
               <span><i class="fas fa-angle-double-right"></i><a href="#">Site Map</a></span>
             </div>
           </div>
@@ -206,19 +248,25 @@
   </section>
   <!-- Contact Part End -->
 
+
   <!-- Footer Part Start -->
   <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h4><strong>Our Applied Organizations:</strong> <a href="https://www.wastetechnologiesllc.com/" target="_blank">Waste Technologies LLC</a> || <a href="http://tazabazar.com/00/" target="_blank">TazaBazar</a> || <a href="http://nkwebtechnology.com/" target="_blank">NK Web Technology</a></h4>
-          <h5>Copyright © 2004-2021 Zibonshathi... All Rights Reserved</h5>
+          <h5>Copyright © 2004-2021 Zibonshathi All Rights Reserved</h5>
         </div>
       </div>
     </div>
   </footer>
   <!-- Footer Part End -->
 
+  <!--Back to Top Part Start-->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!--Back to Top Part End-->
 
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>

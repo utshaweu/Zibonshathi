@@ -28,12 +28,26 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 .dropdown-toggle::after{
   display: none;
 }
+.dropdown-item{
+  transition: all linear .3s;
+}
+.dropdown-item:hover{
+  background: #d9475c;
+  color: #ffffff;
+}
 .navbar{
   /* position: absolute;
   top: 0;
   width: 100%;
   z-index: 99; */
   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  background: rgba(52, 73, 94, 0.95);
+  transition: background-color 0.5s ease;
+  padding: 0;
+}
+.navbar-brand{
+  background: #fff;
+  padding: 10px 5px;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #89c540;
@@ -67,7 +81,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   color: #89c540;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-  color: #ec1e27;
+  color: #d9475c;
 }
 .navbar-light .navbar-nav .nav-link i{
   font-size: 14px;
@@ -83,7 +97,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   border-radius: 50%;
 }
 .navbar-light .navbar-nav .nav-link:hover .help{
-  border: 1px solid #ec1e27;
+  border: 1px solid #d9475c;
 }
 .login-modal .modal .modal-content{
   padding: 30px 50px;
@@ -204,9 +218,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-align: center;
 }
 .form .reg .btn{
-  background: rgb(236,30,69);
-  background: linear-gradient(90deg, rgba(236,30,69,1) 0%, rgba(236,30,39,1) 35%, rgba(236,30,107,1) 100%);
-  border: 1px solid #ec1e27;
+  background: #d9475c;
+  border: 1px solid #d9475c;
   border-radius: 5px;
   font-weight: 500;
 }
@@ -216,13 +229,14 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 
 .menu-bg{
-  background: #f5f5f5;
+  background: #212F3C;
   position: fixed;
   animation: bg 1s;
   width: 100%;
   top: 0;
   z-index: 999;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  border-bottom: 5px solid #d9475c;
 }
 @keyframes bg{
   from{top: -50px;}
@@ -253,10 +267,11 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 .banner-contents{
   position: relative;
   z-index: 9;
-  padding-top: 90px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .banner-text h3{
-  color: #89c540;
+  color: #d9475c;
   font-weight: 700;
   font-size: 35px;
   margin-bottom: 15px;
@@ -270,7 +285,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  padding-right: 168px;
+  padding-right: 188px;
 }
 .banner-content h2{
   color: #ffffff;
@@ -279,8 +294,6 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   margin-bottom: 15px;
 }
 .banner-content-search{
-  background: rgba(0,0,0,0.4);
-  padding: 0px 30px;
   padding-top: 20px;
   padding-bottom: 25px;
   border-radius: 5px;
@@ -316,12 +329,62 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   font-weight: 500;
   font-size: 16px;
   text-transform: capitalize;
+  letter-spacing: 1px;
 }
 .banner-content-search .search-btn .btn:hover{
   background: rgb(137,197,64);
   background: linear-gradient(90deg, rgba(137,197,64,1) 0%, rgba(172,211,103,1) 35%, rgba(137,197,64,1) 100%);
 }
-
+/* ==============================================================================================
+                                    Free Registration & Search Part Css
+================================================================================================= */
+.reg-search-bg{
+  background: #34495e;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.regis-search-bg{
+  background: #d9475c;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+.regis-search-bg label{
+  color: #fff;
+  font-weight: 500;
+}
+.regis-search-bg .form-control{
+  border-radius: 5px;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 500;
+}
+.regis-search-bg .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #89c540;
+}
+.regis-search-bg .btn{
+  background: rgb(172,211,103);
+  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
+  border: 1px solid #89c540;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+.regis-search-bg .btn:hover{
+  background: rgb(137,197,64);
+  background: linear-gradient(90deg, rgba(137,197,64,1) 0%, rgba(172,211,103,1) 35%, rgba(137,197,64,1) 100%);
+}
+.regis-search-bg p{
+  color: #fff;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.regis-search-bg p span{
+  font-weight: 700;
+}
 /* ===============================================================================================
                                            Work Part Css
 ================================================================================================== */
@@ -347,7 +410,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #89c540;
+  background: #d9475c;
 }
 .title p{
   color: #666666;
@@ -360,6 +423,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   border-radius: 8px;
   transition: all linear .3s;
   cursor: pointer;
+  position: relative;
 }
 .work-content i{
   width: 60px;
@@ -367,8 +431,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   line-height: 60px;
   font-size: 24px;
   color: #fff;
-  background: rgb(172,211,103);
-  background: linear-gradient(45deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
+  background: #d9475c;
   border-radius: 50%;
   margin-bottom: 20px;
   transition: all linear .3s;
@@ -384,6 +447,19 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-transform: capitalize;
   margin-bottom: 15px;
 }
+.work-content span{
+  color: #212F3C;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+.work-content:hover span{
+  color: #ec1e27;
+}
 .work-content p{
   font-weight: 400;
   color: #666666;
@@ -394,7 +470,19 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 .work-content:hover{
   transform: translateY(-2px);
 }
-
+.get-started{
+  margin-top: 45px;
+}
+.get-started .btn{
+  background: #d9475c;
+  border: 1px solid #d9475c;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 10px 18px;
+}
 /* ===========================================================================================
                                          Service Part Css
 ============================================================================================== */
@@ -426,7 +514,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   color: #fff!important;
 }
 .service-content{
-  background: rgba(245,245,245,.4);
+  background: #34495e;
   padding: 20px 15px;
   border-radius: 8px;
   transition: all linear .3s;
@@ -442,9 +530,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   line-height: 60px;
   font-size: 24px;
   color: #fff;
-  background: rgb(172,211,103);
-  background: linear-gradient(45deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
-  border: 1px solid #89c540;
+  background: #d9475c;
+  border: 1px solid #d9475c;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -468,8 +555,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 #common{
   padding-top: 28px;
   padding-bottom: 25px;
-  background: rgb(172,211,103);
-  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
+  background: #d9475c;
 }
 #common h3{
   color: #fff;
@@ -479,9 +565,9 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-transform: capitalize;
 }
 .cmn-btn .btn{
-  background: rgb(236,30,69);
-  background: linear-gradient(90deg, rgba(236,30,69,1) 0%, rgba(236,30,39,1) 35%, rgba(236,30,107,1) 100%);
-  border: 1px solid #ec1e27;
+  background: rgb(172,211,103);
+  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
+  border: 1px solid #89c540;
   border-radius: 5px;
   font-size: 16px;
   color: #fff;
@@ -490,10 +576,6 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 .cmn-btn .btn-primary.focus, .btn-primary:focus {
   box-shadow: none;
-}
-.cmn-btn .btn:hover{
-  background: rgb(236,30,39);
-  background: linear-gradient(90deg, rgba(236,30,39,1) 0%, rgba(236,30,107,1) 35%, rgba(236,30,39,1) 100%);
 }
 /* ===================================================================================================
                                             Featured Male Profile Part Css 
@@ -509,6 +591,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 .common-card-item .card-img-top{
   width: 100%;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
 }
 .common-card-item .card{
   border: 1px solid rgba(221,221,221.4);
@@ -532,35 +616,25 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 .common-card-item .card-body .btn{
   margin-top: 20px;
-  background: rgb(172,211,103);
-  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
-  border: 1px solid #89c540;
+  background: #d9475c;
+  border: 1px solid #d9475c;
   border-radius: 5px;
   font-weight: 500;
   font-size: 14px;
   text-transform: capitalize;
-}
-.common-card-item .card-body .btn:hover{
-  background: rgb(137,197,64);
-  background: linear-gradient(90deg, rgba(137,197,64,1) 0%, rgba(172,211,103,1) 35%, rgba(137,197,64,1) 100%); 
 }
 .view-all{
   margin-top: 40px;
 }
 .view-all .btn{
   margin-top: 20px;
-  background: rgb(172,211,103);
-  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
-  border: 1px solid #89c540;
+  background: #d9475c;
+  border: 1px solid #d9475c;
   border-radius: 5px;
   font-weight: 500;
   font-size: 16px;
   padding: 8px 50px;
   text-transform: capitalize;
-}
-.view-all .btn:hover{
-  background: rgb(137,197,64);
-  background: linear-gradient(90deg, rgba(137,197,64,1) 0%, rgba(172,211,103,1) 35%, rgba(137,197,64,1) 100%); 
 }
 
 /*=========================================================================================================
@@ -623,7 +697,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   transform: translateX(-50%);
 }
 .str-contents .img-border{
-  border: 5px solid #89c540;
+  border: 5px solid #d9475c;
 }
 .str-contents p{
   color: #666666;
@@ -651,28 +725,21 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
                                             Contact Part Css
 =================================================================================================== */
 #contact{
-  background: #f5f5f5;
+  background: rgba(52, 73, 94, 0.95);
   padding-top: 70px;
   padding-bottom: 70px;
 }
 .cont-content{
-  border: 1px solid rgba(68,68,68,.2);
   border-radius: 8px;
   padding: 18px 12px;
-  cursor: pointer;
-  transition: all linear .3s;
-  height: 300px;
-  background: #fff;
-}
-.cont-content:hover{
-  transform: translateY(-2px);
 }
 .cont-content h5{
-  border-bottom: 1px solid rgba(68,68,68,.2);
+  border-bottom: 1px solid rgb(217, 71, 92,0.5);
   padding-bottom: 18px;
   font-size: 20px;
   color: #89c540;
   font-weight: 600;
+  text-align: center;
 }
 .cont-span{
   padding-top: 15px;
@@ -680,9 +747,10 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 .cont-span span{
   display: block;
   margin-bottom: 5px;
+  transition: all linear .3s;
 }
 .cont-span span a{
-  color: #666666;
+  color: #fff;
   font-size: 16px;
   transition: all linear .3s;
   font-weight: 500;
@@ -690,33 +758,26 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 .cont-span span a:hover{
   color: #89c540;
 }
-.cont-spans a i{
-  color: #666666;
-  margin-top: 20px;
-  margin-right: 15px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 16px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  transition: all linear .3s;
-}
-.cont-spans a i:hover{
-  background: rgb(172,211,103);
-  background: linear-gradient(45deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
-  color: #fff;
-}
 .mr-1{
   margin-right: 0;
+}
+.cont-span span i{
+  color: #fff;
+  margin-right: 10px;
+  transition: all linear .3s;
+}
+.cont-span span:hover i{
+  color: #89c540;
+}
+.cont-span span:hover{
+  transform: translateX(5px);
 }
 
 /* ================================================================================================
                                             Footer Part Css
 ==================================================================================================== */
 #footer{
-  background: #89c540;
+  background: #212F3C;
   padding-top: 23px;
   padding-bottom: 16px;
   text-align: center;
@@ -726,10 +787,12 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   margin-top: 8px;
   font-weight: 500;
   font-size: 14px;
+  font-style: italic;
 }
 #footer h4{
   color: #dddddd;
   font-size: 14px;
+  font-style: italic;
 }
 #footer h4 a{
   color: #fff;
@@ -737,7 +800,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 
 #footer h4 a:hover{
-  color: #ec1e27;
+  color: #d9475c;
 }
 
 /* ===============================================================================================
@@ -999,6 +1062,16 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   background: rgb(236,30,39);
   background: linear-gradient(90deg, rgba(236,30,39,1) 0%, rgba(236,30,107,1) 35%, rgba(236,30,39,1) 100%);
 }
+.regis-free p{
+  color: #444444;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.regis-free p span{
+  color: #ec1e27;
+  font-weight: 600;
+}
 /* =====================================================================================================
                                           Profile Edit Modal Css
 ======================================================================================================== */
@@ -1102,10 +1175,11 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   line-height: 26px;
 }
 .about-details h6{
-  font-size: 18px;
-  color: #020282;
-  font-weight: 600;
+  font-size: 20px;
+  color: #212F3C;
+  font-weight: 700;
   margin-bottom: 15px;
+  font-style: italic;
 }
 
 /* =======================================================================================================
@@ -1127,14 +1201,18 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #ec1e27;
+  color: #fff;
   margin-bottom: 30px;
+  background: #d9475c;
+  padding: 8px 18px;
+  border-radius: 30px;
 }
 .terms-details h6{
-  color: #020282;
-  font-size: 18px;
+  color: #212F3C;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
+  font-style: italic;
 }
 .terms-details span{
   color: #666666;
@@ -1155,8 +1233,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
                                         Privacy Policy Part Css
 ========================================================================================================= */
 #privacy{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .privacy-details{
   -webkit-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
@@ -1170,8 +1248,11 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #ec1e27;
+  color: #fff;
   margin-bottom: 30px;
+  background: #d9475c;
+  padding: 8px 18px;
+  border-radius: 30px;
 }
 .privacy-details span{
   display: block;
@@ -1181,10 +1262,11 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   line-height: 26px;
 }
 .privacy-details h6{
-  color: #020282;
-  font-size: 18px;
+  color: #212F3C;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
+  font-style: italic;
 }
 .privacy-details ul li{
   color: #666666;
@@ -1214,7 +1296,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #020282;
+  color: #d9475c;
   margin-bottom: 15px;
 }
 .c-form p{
@@ -1245,25 +1327,22 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 .sub-form .btn{
   border-radius: 30px;
-  background: rgb(172,211,103);
-  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
-  border: 1px solid #89c540;
+  background: #d9475c;
+  border: 1px solid #d9475c;
   padding: 8px 20px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
-}
-.sub-form .btn:hover{
-  background: rgb(137,197,64);
-  background: linear-gradient(90deg, rgba(137,197,64,1) 0%, rgba(172,211,103,1) 35%, rgba(137,197,64,1) 100%);
 }
 
 /* ====================================================================================================
                                              Help Part Css
 ====================================================================================================== */
 #help{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background: rgb(217,71,92);
+  background: linear-gradient(45deg, rgba(217,71,92,1) 0%, rgba(230,74,132,1) 35%, rgba(217,71,92,1) 100%); */
 }
 .help-details{
   -webkit-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
@@ -1277,14 +1356,19 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #ec1e27;
+  color: #fff;
   margin-bottom: 30px;
+  background: #d9475c;
+  padding: 10px 0;
+  border-radius: 30px;
+
 }
 .help-details h6{
-  color: #020282;
-  font-size: 18px;
+  color: #212F3C;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
+  font-style: italic;
 }
 .help-details span{
   display: block;
@@ -1322,14 +1406,18 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #ec1e27;
+  color: #fff;
   margin-bottom: 30px;
+  background: #d9475c;
+  padding: 8px 18px;
+  border-radius: 30px;
 }
 .partner-details h6{
-  color: #020282;
-  font-size: 17px;
+  color: #212F3C;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
+  font-style: italic;
 }
 .partner-details span{
   display: block;
@@ -1360,8 +1448,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
                                            Membership Part Css
 ===================================================================================================== */
 #membership{
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .plan-content{
   padding: 25px 35px;
@@ -1371,6 +1459,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   transition: all linear .3s;
   cursor: pointer;
   position: relative;
+  background: #ffffff;
 }
 .plan-content:hover{
   -webkit-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
@@ -1416,9 +1505,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   margin-top: 10px;
 }
 .plan-content h5{
-  background: rgb(172,211,103);
-  background: linear-gradient(90deg, rgba(172,211,103,1) 0%, rgba(137,197,64,1) 35%, rgba(172,211,103,1) 100%);
-  border: 1px solid #89c540;
+  background: #d9475c;
+  border: 1px solid #d9475c;
   display: inline;
   border-radius: 5px;
   padding: 6px 15px;
@@ -1439,7 +1527,15 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 .mr8{
   border: 1px solid rgba(137, 197, 64,0.4);
 }
-
+.sub-story-btn .btn{
+  margin-top: 30px;
+  background: #d9475c;
+  border: 1px solid #d9475c;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+}
 /* ========================================================================================================
                                              Stories Details Part Css
 ======================================================================================================== */
@@ -1514,9 +1610,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
                                           Forget Password Part Css
 ===================================================================================================== */
 #forget-password{
-  background: rgb(236,30,69);
-  background: linear-gradient(90deg, rgba(236,30,69,1) 0%, rgba(236,30,39,1) 35%, rgba(236,30,107,1) 100%);
-  border: 1px solid #ec1e27;
+  background: rgb(217,71,92);
+  background: linear-gradient(45deg, rgba(217,71,92,1) 0%, rgba(230,74,132,1) 35%, rgba(217,71,92,1) 100%);
   height: 100vh;
 }
 .forget-password{
@@ -1556,7 +1651,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 	margin-top: 20px;
 }
 .forget-password .account a{
-	color: #020282;
+	color: #212F3C;
 	font-weight: 500;
 }
 .mr9{
@@ -1565,4 +1660,76 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 .mr10{
 	padding-left: 15px;
+}
+
+/* ===============================================================================================================
+                                                 Submit Story Part Css
+================================================================================================================= */
+#submit-story{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.submit-story-form{
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
+  box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
+  background: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius: 8px;
+}
+.submit-story-form h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #d9475c;
+  margin-bottom: 30px;
+}
+.submit-story-form .form-control{
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+.submit-story-form .form-control:focus{
+  box-shadow: none;
+  border-color: #89c540;
+}
+.submit-story-form label{
+  color: #89c540;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sub-btn{
+  margin-top: 15px;
+}
+.sub-btn .btn{
+  background: #d9475c;
+  border: 1px solid #d9475c;
+}
+
+/* =================================================================================================
+                                       Customer Support Part Css 
+====================================================================================================*/
+#customer-support{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: url(../images/customer-support.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+#customer-support::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.35);
+}
+.customer-bg{
+  position: relative;
+  z-index: 99;
 }

@@ -41,13 +41,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   width: 100%;
   z-index: 99; */
   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-  background: rgba(52, 73, 94, 0.95);
-  transition: background-color 0.5s ease;
-  padding: 0;
-}
-.navbar-brand{
-  background: #fff;
-  padding: 10px 5px;
+  background: #ffffff;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #89c540;
@@ -229,14 +223,14 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
 }
 
 .menu-bg{
-  background: #212F3C;
+  background: #ffffff;
   position: fixed;
   animation: bg 1s;
   width: 100%;
   top: 0;
   z-index: 999;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-  border-bottom: 5px solid #d9475c;
+  border-bottom: 3px solid #d9475c;
 }
 @keyframes bg{
   from{top: -50px;}
@@ -316,7 +310,7 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   margin-bottom: 5px;
 }
 .banner-content-search .search-btn{
-  margin-top: 32px;
+  margin-top: 18px;
 }
 .banner-content-search .search-btn a{
   color: #fff;
@@ -452,10 +446,8 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 22px;
-  left: 0;
+  display: block;
+  margin-bottom: 10px;
 }
 .work-content:hover span{
   color: #d9475c;

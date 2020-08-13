@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile</title>
+  <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  
+   <!-- Navbar Part Star -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img src="../images/logo2.png" alt="logo" style="width: 185px; height: 75px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/membership.html">Premium Plans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/createprofile.html">Create Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/register.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-headset help"></i> Help <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../pages/help.html">Help Desk</a>
+            <a class="dropdown-item" href="../pages/contact.html">Contact Us</a>
+          </div>
+        </li>   
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <!--Login Modal -->
+  <div class="login-modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><img src="../images/logo2.png" alt="logo" style="width: 185px; height: 65px;"></h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="welcome">
+              <h2>Welcome back! Please Login</h2>
+            </div>
+            <div class="form">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="Password">
+                </div>
+                <div class="forget">
+                  <p><a href="../pages/forgetPassword.html">Forget Password?</a></p>
+                </div>
+                <button type="submit" class="log btn btn-primary">Login</button>
+              </form>
+              <div class="or">
+                <h6>Or</h6>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="cmn-part">
+                    <a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cmn-part mr5">
+                    <a href="#"><i class="fab fa-google-plus-g"></i> <span>Google</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cmn-part mr6">
+                    <a href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="cmn-part mr7">
+                    <a href="#"><i class="fab fa-linkedin-in"></i> <span>Linkedin</span></a>
+                  </div>
+                </div>
+              </div>
+              <p>New to Zibonshathi?</p>
+              <div class="reg">
+                <a class="btn btn-primary" href="../pages/register.html" role="button">Register Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar Part End -->
+
+  <!-- Create Profile Part Start -->
+  <section id="create-profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 m-auto">
+          <div class="create-profile">
+            <h5>Create Profile</h5>
+            <form>
+              <div class="profile-details">
+                <h6><i class="fas fa-lock"></i>Login Info</h6>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Enter Your Email Id :</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@gmail.com">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState">Create Profile For :</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Select</option>
+                        <option>Self</option>
+                        <option>Son</option>
+                        <option>Daughter</option>
+                        <option>Brother</option>
+                        <option>Sister</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Create a Password :</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="exampleInputPassword2">Confirm Password :</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState2">Marital Status :</label>
+                      <select id="inputState2" class="form-control">
+                        <option selected>Marital Status</option>
+                        <option>Unmarried</option>
+                        <option>Widow</option>
+                        <option>Divorced</option>
+                        <option>Separated</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Male</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Female</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-details">
+                <h6><i class="fas fa-bars"></i>Basic Info</h6>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName11">First Name :</label>
+                      <input type="text" class="form-control" id="inputName11" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName22">Last Name :</label>
+                      <input type="text" class="form-control" id="inputName22" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState22">Religion :</label>
+                      <select id="inputState22" class="form-control">
+                        <option selected>Select</option>
+                        <option>Islam</option>
+                        <option>Hindu</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName23">Mother Tongue :</label>
+                      <input type="text" class="form-control" id="inputName23" placeholder="Mother Tongue">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName33">Occupation :</label>
+                      <input type="text" class="form-control" id="inputName3" placeholder="Occupation">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputDate">Date Of Birth :</label>
+                      <input type="date" class="form-control" id="inputDate" placeholder="Date Of Birth">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState34">Height :</label>
+                      <select id="inputState34" class="form-control">
+                        <option selected>Select</option>
+                        <option>5'6</option>
+                        <option>5'7</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputNumber4">Mobile No :</label>
+                      <input type="number" class="form-control" id="inputNumber4" placeholder="Mobile No">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Choose File :</label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName5">Location :</label>
+                      <input type="text" class="form-control" id="inputName5" placeholder="Location">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputNumber22">Age :</label>
+                      <input type="number" class="form-control" id="inputNumber22" placeholder="Age">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState44">Blood Group :</label>
+                      <select id="inputState44" class="form-control">
+                        <option selected>Select</option>
+                        <option>Ab+</option>
+                        <option>A+</option>
+                        <option>A- </option>
+                        <option>Ab- </option>
+                        <option>B+</option>
+                        <option>B- </option>
+                        <option>O+</option>
+                        <option>O- </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-details">
+                <h6><i class="fas fa-graduation-cap"></i>Education & Career</h6>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName55">Education :</label>
+                      <input type="text" class="form-control" id="inputName55" placeholder="Write Here">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName56">University :</label>
+                      <input type="text" class="form-control" id="inputName56" placeholder="Write Here">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState155">Working With :</label>
+                      <select id="inputState155" class="form-control">
+                        <option selected>Select</option>
+                        <option>Private Company</option>
+                        <option>Government Company</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState166">Working As :</label>
+                      <select id="inputState166" class="form-control">
+                        <option selected>Select</option>
+                        <option>Web / UX Designers</option>
+                        <option>Graphics Designer</option>
+                        <option>Front-end Developer</option>
+                        <option>Back-end Developer</option>
+                        <option>Product Manager</option>
+                        <option>Sales Executive</option>
+                        <option>Data Entry</option>
+                        <option>Marketing</option>
+                        <option>Android Developer</option>
+                        <option>IOS Developer</option>
+                        <option>Digital Marketing</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState177">Annual Income :</label>
+                      <select id="inputState177" class="form-control">
+                        <option selected>Select</option>
+                        <option>Upto 40K</option>
+                        <option>50K</option>
+                        <option>60K</option>
+                        <option>70K</option>
+                        <option>80K</option>
+                        <option>90K</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName18">Employer Name :</label>
+                      <input type="text" class="form-control" id="inputName18" placeholder="Write Here">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-details">
+                <h6><i class="fas fa-users"></i>Family Details</h6>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName144">Father's Status :</label>
+                      <input type="text" class="form-control" id="inputName144" placeholder="Write Here">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName155">Mother's Status :</label>
+                      <input type="text" class="form-control" id="inputName155" placeholder="Write Here">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState9">No. of Brothers :</label>
+                      <select id="inputState9" class="form-control">
+                        <option selected>Select</option>
+                        <option>None</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState10">No. of Sisters :</label>
+                      <select id="inputState10" class="form-control">
+                        <option selected>Select</option>
+                        <option>None</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputState11">Family Location :</label>
+                      <select id="inputState11" class="form-control">
+                        <option selected>Select</option>
+                        <option>Bangladesh</option>
+                        <option>Pakistan</option>
+                        <option>India</option>
+                        <option>Sri lanka</option>
+                        <option>Australia</option>
+                        <option>USA</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="inputName16">Family Values :</label>
+                      <input type="text" class="form-control" id="inputName16" placeholder="Write Here">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-details">
+                <h6><i class="fas fa-pen"></i>More About Yourself</h6>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I agree with terms & conditions</label>
+              </div>
+              <div class="create-profile-btn">
+                <button type="submit" class="btn btn-primary">Create My Profile</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Create Profile Part End -->
+
+
+
+
+  <!-- Contact Part Start -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h5>Need Help?</h5>
+            <div class="cont-span">
+              <span><i class="fas fa-angle-double-right"></i><a href="#" data-toggle="modal" data-target="#exampleModal">Member Login</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/register.html">Sign Up</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/partnerSearch.html">Partner Search</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/membership.html">Premium Memberships</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="./customersupport.html">Customer Support</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <h5>Company</h5>
+            <div class="cont-span">
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/aboutUs.html">About Us</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="#">Helpful Tips</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="./submitstory.html">Submit Story</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+            <h5>Privacy & You</h5>
+            <div class="cont-span">
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/termsOfUse.html">Terms Of Use</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/privacyPolicy.html">Privacy Policy</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="../pages/contact.html">Contact Us</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+            <h5>Contacts</h5>
+            <div class="cont-span">
+              <p style="color: #ffffff;font-weight: 500;">House – 951, Road – 14
+                Avenue – 02, Mirpur DOHS
+                Mirpur-12, Dhaka-1216 </p>
+              <span><i class="fas fa-phone-alt"></i><a href="#">(+880) 1824570690</a></span>
+              <span><i class="fas fa-envelope"></i><a href="#">info@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact Part End -->
+
+  <!-- Footer Part Start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><strong>Our Associated Organizations:</strong> <a href="https://www.wastetechnologiesllc.com/" target="_blank">Waste Technologies LLC</a> || <a href="http://tazabazar.com/00/" target="_blank">TazaBazar</a> || <a href="https://shebawebtech.com/" target="_blank">SheBa Web Technology LLC</a></h4>
+          <h5>Copyright © 2004-2020 Zibonshathi... All Rights Reserved</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Part End -->
+
+
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+</body>
+</html>

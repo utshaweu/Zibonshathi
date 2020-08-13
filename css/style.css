@@ -1720,3 +1720,64 @@ p,span,a,.btn,.form-control,strong,label,button,ul,li,ol{
   position: relative;
   z-index: 99;
 }
+/* ===================================================================================================
+                                        Create Profile Part Css
+===================================================================================================== */
+#create-profile{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.create-profile{
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
+  box-shadow: 0px 1px 5px 0px rgba(236,30,39,0.5);
+  background: rgb(255, 255, 255);
+  padding: 35px;
+  border-radius: 8px;
+}
+.create-profile h5{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  background: #d9475c;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+.create-profile h6{
+  color: #212F3C;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.create-profile h6 i{
+  color: #89c540;
+  margin-right: 8px;
+}
+.profile-details{
+  margin-bottom: 30px;
+}
+.profile-details label{
+  color: #89c540;
+  font-weight: 500;
+}
+.profile-details .form-control{
+  color: #212F3C;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.profile-details .form-control:focus{
+  box-shadow: none;
+  border-color: #89c540;
+}
+.profile-details option{
+  color: #212F3C;
+}
+.create-profile-btn .btn{
+  background: #d9475c;
+  border-color: #d9475c;
+  padding: 10px 25px;
+  border-radius: 25px;
+  letter-spacing: 1px;
+}

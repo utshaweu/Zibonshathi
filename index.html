@@ -54,9 +54,9 @@
         <li class="nav-item">
           <a class="nav-link" href="./pages/createprofile.html">Create Profile</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="./pages/register.html">Register</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login<span class="sr-only">(current)</span></a>
         </li>
@@ -143,10 +143,56 @@
   <section id="banner">
     <div class="container banner-contents">
       <div class="row">
-        <div class="col-lg-7">
-          <div class="banner-text wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
-            <h3>Welcome to Zibonshathi</h3>
-            <p>Zibonshathi is a matrimonial introductions web site specially made for individuals who are living in Bangladesh and around the world. Zibonshathi makes it possible for members to communicate safely with matching profiles using the latest technology.</p>
+        <div class="col-lg-6 ml-auto">
+          <div class="regis-search-bg">
+            <div class="banner-content">
+              <h2 class="text-center" style="margin-bottom: 25px;">Register New Member</h2>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="exampleInputText1">First Name</label>
+                    <input type="email" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="exampleInputText2">Last Name</label>
+                    <input type="email" class="form-control" id="exampleInputText2" aria-describedby="emailHelp" placeholder="Last Name">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Enter Your Email Id</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@gmail.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Create a Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="inputState">Create Profile For</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Select</option>
+                  <option>Self</option>
+                  <option>Son</option>
+                  <option>Daughter</option>
+                  <option>Brother</option>
+                  <option>Sister</option>
+                </select>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Female</label>
+              </div>
+                <button type="submit" class="btn btn-primary w-100">Register Free</button>
+            </form>
+              <p>By clicking on 'Register Free', you confirm that you accept the <span><i>Terms of Use</i></span> and <span><i>Privacy Policy</i></span></p>
           </div>
         </div>
       </div>
@@ -156,19 +202,16 @@
 
   <!-- Free Registration & Search Part Start -->
   <section id="reg-search">
-    <div class="container reg-search-bg">
-      <div class="row">
-        <div class="col-lg-10 m-auto">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="regis-search-bg">
+      <div class="row mx-0">
+        <div class="col-lg-12">
+              <div class="regis-search-bg mr8">
                 <div class="banner-content">
                   <h2 class="text-center">Find your perfect life partner</h2>
                 </div>
                 <div class="banner-content-search">
                   <form>
                    <div class="row">
-                     <div class="col-lg-6 col-md-6">
+                     <div class="col">
                       <label for="inputState">Looking For</label>
                       <select id="inputState" class="form-control">
                         <option selected>Select</option>
@@ -176,11 +219,11 @@
                         <option>Male</option>
                       </select>
                      </div>
-                     <div class="col-lg-6 col-md-6">
+                     <div class="col">
                       <div class="form-group">
                         <label for="inputState2">Marital Status :</label>
                         <select id="inputState2" class="form-control">
-                          <option selected>Marital Status</option>
+                          <option selected>Select</option>
                           <option>Unmarried</option>
                           <option>Widow</option>
                           <option>Divorced</option>
@@ -188,7 +231,7 @@
                         </select>
                       </div>
                      </div>
-                     <div class="col-lg-6 col-md-6">
+                     <div class="col">
                       <label for="inputState2">Age</label>
                       <select id="inputState2" class="form-control">
                         <option selected value="18">18</option>
@@ -236,7 +279,7 @@
                         <option value="60">60</option>
                       </select>
                      </div>
-                     <div class="col-lg-6 col-md-6">
+                     <div class="col">
                       <label for="inputState3">To</label>
                       <select id="inputState3" class="form-control">
                         <option selected value="20">20</option>
@@ -282,7 +325,7 @@
                         <option value="60">60</option>
                       </select>
                      </div>
-                     <div class="col-lg-6 col-md-6">
+                     <div class="col">
                       <label for="inputState4">Religion</label>
                       <select id="inputState4" class="form-control">
                         <option selected value="Islam">Islam</option>
@@ -291,10 +334,10 @@
                         <option value="Christian">Christian</option>
                       </select>
                      </div>
-                     <div class="col-lg-6 col-md-6">
+                     <div class="col">
                       <label for="inputState5">Country</label>
                       <select id="inputState5" class="form-control">
-                        <option selected>Country</option>
+                        <option selected>Select</option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -506,7 +549,7 @@
                         <option value="Zimbabwe">Zimbabwe</option>
                       </select>
                      </div>
-                     <div class="col-lg-12 col-md-12">
+                     <div class="col">
                       <div class="search-btn">
                         <button type="submit" class="btn btn-primary" style="width: 100%;"><a href="#">Search</a></button>
                       </div>
@@ -516,63 +559,8 @@
                   </form>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="regis-search-bg">
-                <div class="banner-content">
-                  <h2 class="text-center" style="margin-bottom: 25px;">Register New Member</h2>
-                </div>
-                <form>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="exampleInputText1">First Name</label>
-                        <input type="email" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="First Name">
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="exampleInputText2">Last Name</label>
-                        <input type="email" class="form-control" id="exampleInputText2" aria-describedby="emailHelp" placeholder="Last Name">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your Email Id</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@gmail.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Create a Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="inputState">Create Profile For</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Select</option>
-                      <option>Self</option>
-                      <option>Son</option>
-                      <option>Daughter</option>
-                      <option>Brother</option>
-                      <option>Sister</option>
-                    </select>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline1">Male</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Female</label>
-                  </div>
-                    <button type="submit" class="btn btn-primary w-100">Register Free</button>
-                </form>
-                  <p>By clicking on 'Register Free', you confirm that you accept the <span><i>Terms of Use</i></span> and <span><i>Privacy Policy</i></span></p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- Free Registration & Search Part End -->
 
@@ -626,8 +614,8 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-            <h2 class="title-head">Zibonshathi Supports</h2>
-            <p class="title-head">Our Best Supports</p>
+            <h2>Zibonshathi Supports</h2>
+            <p>Our Best Supports</p>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
@@ -687,7 +675,7 @@
   <!-- Common part End -->
 
   <!-- Membership Plan Part Start -->
-  <section id="membership-plan">
+  <!-- <section id="membership-plan">
     <div class="container reg-search-bg">
       <div class="row">
         <div class="col-lg-12">
@@ -732,11 +720,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Membership Plan Part End -->
 
   <!-- Featured Male Profile Part Start -->
-  <section id="featured">
+  <!-- <section id="featured">
     <div class="container common-card-item">
       <div class="row">
         <div class="col-lg-12">
@@ -800,12 +788,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Featured Male Profile Part End -->
 
 
   <!-- Featured Female Profile Part Start -->
-  <section id="featured2">
+  <!-- <section id="featured2">
     <div class="container common-card-item">
       <div class="row">
         <div class="col-lg-12">
@@ -869,11 +857,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Featured Female Profile Part End -->
 
   <!-- Stories Part Start -->
-  <section id="stories">
+  <!-- <section id="stories">
     <div class="container str-content">
       <div class="row">
         <div class="col-lg-12">
@@ -913,11 +901,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Stories Part End -->
 
   <!-- Common part Start -->
-  <section id="common">
+  <!-- <section id="common">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -934,12 +922,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Common part End -->
 
   <!-- Contact Part Start -->
   <section id="contact">
-    <div class="container">
+    <div class="container contact-bg">
       <div class="row">
         <div class="col-lg-3 col-sm-6">
           <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -958,7 +946,7 @@
             <h5>Company</h5>
             <div class="cont-span">
               <span><i class="fas fa-angle-double-right"></i><a href="./pages/aboutUs.html">About Us</a></span>
-              <span><i class="fas fa-angle-double-right"></i><a href="#">Helpful Tips</a></span>
+              <span><i class="fas fa-angle-double-right"></i><a href="./pages/viewallstories.html">Success Stories</a></span>
               <span><i class="fas fa-angle-double-right"></i><a href="./pages/submitstory.html">Submit Story</a></span>
             </div>
           </div>
@@ -977,7 +965,7 @@
           <div class="cont-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
             <h5>Contacts</h5>
             <div class="cont-span">
-              <p style="color: #ffffff;font-weight: 500;">House – 951, Road – 14
+              <p style="color: #ffffff;font-weight: 600;font-size: 18px;">House – 951, Road – 14
                 Avenue – 02, Mirpur DOHS
                 Mirpur-12, Dhaka-1216 </p>
               <span><i class="fas fa-phone-alt"></i><a href="#">(+880) 1824570690</a></span>

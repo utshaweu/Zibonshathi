@@ -95,8 +95,6 @@ $(function(){
       ]
   });
 
-  // Venobox
-  $('.venobox').venobox();
   
   //Wow Js
   new WOW().init();

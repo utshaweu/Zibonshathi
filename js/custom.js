@@ -1,11 +1,15 @@
 $(function(){
   'use strict'
 
+  
+
   //Preloader js
   $(window).on('load',function(){
     $(".preloader").delay(1000).fadeOut(1000);
   });
 
+  
+  
   //Sticky Menu js
   $(window).scroll(function(){
     var scrolling = $(this).scrollTop();
@@ -24,6 +28,8 @@ $(function(){
      }
  });
 
+  
+
  // Closes responsive menu when a scroll link is clicked
  $('.nav-link').on('click', function () {
   $('.navbar-collapse').collapse('hide');
@@ -37,6 +43,7 @@ $(function(){
     html_body.animate({scrollTop:0},1000);
   });
 
+  
   //Smooth Scroll js
   var html_body = $('html, body');
   $('a').on('click', function () {
@@ -51,6 +58,7 @@ $(function(){
           }
       }
   });
+
 
    //Story Slider
    $('.story-slider').slick({
@@ -87,8 +95,12 @@ $(function(){
       ]
   });
 
+  // Venobox
+  $('.venobox').venobox();
+  
   //Wow Js
   new WOW().init();
+
 
 
 

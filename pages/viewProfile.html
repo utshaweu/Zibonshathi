@@ -7,6 +7,9 @@
   <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/venobox.css">
   <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
@@ -26,13 +29,13 @@
           <a class="nav-link" href="../index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/viewallstories.html">Success Stories</a>
+          <a class="nav-link" href="../pages/membership.html">Premium Plans</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/register.html">Register</a>
+          <a class="nav-link" href="../pages/createprofile.html">Create Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login <i class="fas fa-chevron-down"></i><span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -312,6 +315,49 @@
                       <div class="basics ml-btm">
                         <h5><strong>Residency Status : </strong>Citizen</h5>
                         <h5><strong>Zip / Pin code : </strong>1207</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v-pro-cmn">
+                  <div class="row">
+                    <div class="col-lg-10 col-10">
+                      <h6>Featured Image</h6>
+                    </div>
+                    <div class="col-lg-2 col-2">
+                      <div class="edit-btn text-right">
+                        <a href="#" role="button" data-toggle="modal" data-target="#exampleModal10">Edit</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-btm"></div>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="image">
+                        <a class="venobox" data-gall="gallery01" href="../images/v1.jpg">
+                          <img src="../images/v1.jpg" alt="image" class="w-100" style="border-radius: 8px;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="image">
+                        <a class="venobox" data-gall="gallery02" href="../images/v2.jpg">
+                          <img src="../images/v2.jpg" alt="image" class="w-100" style="border-radius: 8px;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="image">
+                        <a class="venobox" data-gall="gallery03" href="../images/v3.jpg">
+                          <img src="../images/v3.jpg" alt="image" class="w-100" style="border-radius: 8px;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="image">
+                        <a class="venobox" data-gall="gallery04" href="../images/v4.jpg">
+                          <img src="../images/v4.jpg" alt="image" class="w-100" style="border-radius: 8px;">
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -880,13 +926,58 @@
   </div>
   <!-- Location of Groom Modal End -->
 
+  <!-- Featured Image Modal Start -->
+  <div class="pro-edit-modal">
+    <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Featured Image</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="exampleFormControlFile5">Upload Image :</label>
+                   <input type="file" class="form-control-file" id="exampleFormControlFile5">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile2">Upload Image :</label>
+                   <input type="file" class="form-control-file" id="exampleFormControlFile2">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="exampleFormControlFile3">Upload Image :</label>
+                   <input type="file" class="form-control-file" id="exampleFormControlFile3">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile4">Upload Image :</label>
+                   <input type="file" class="form-control-file" id="exampleFormControlFile4">
+                </div>
+              </div>
+              <div class="pro-edit-modal-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Featured Image Modal End -->
+
   <!-- Footer Part Start -->
   <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h4><strong>Our Applied Organizations:</strong> <a href="https://www.wastetechnologiesllc.com/" target="_blank">Waste Technologies LLC</a> || <a href="http://tazabazar.com/00/" target="_blank">TazaBazar</a> || <a href="http://nkwebtechnology.com/" target="_blank">NK Web Technology</a></h4>
-          <h5>Copyright © 2004-2021 Zibonshathi... All Rights Reserved</h5>
+          <h4><strong>Our Associated Organizations:</strong> <a href="https://www.wastetechnologiesllc.com/" target="_blank">Waste Technologies LLC</a> || <a href="http://tazabazar.com/00/" target="_blank">TazaBazar</a> || <a href="https://shebawebtech.com/" target="_blank">SheBa Web Technology LLC</a></h4>
+          <h5>Copyright © 2004-2020 Zibonshathi... All Rights Reserved</h5>
         </div>
       </div>
     </div>
@@ -902,6 +993,9 @@
 
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/venobox.min.js"></script>
+  <script src="../js/wow.min.js"></script>
   <script src="../js/custom.js"></script>
 </body>
 </html>
